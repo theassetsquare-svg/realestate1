@@ -107,3 +107,69 @@ button,a{min-height:44px;min-width:44px}
   .cat-grid{grid-template-columns:repeat(2,1fr)}
   .bottom-bar .bar-top{flex-direction:column;gap:4px;padding:10px 16px}
 }
+
+/* ===== INTERACTIVE WIDGETS ===== */
+
+/* Price Simulator */
+.sim-box{background:#fff;border:1px solid #e2e8f0;border-radius:16px;padding:28px;margin:32px 0}
+.sim-box h3{font-size:1.15rem;font-weight:700;color:#1e293b;margin-bottom:16px}
+.sim-row{display:flex;gap:12px;align-items:center;margin-bottom:12px;flex-wrap:wrap}
+.sim-row label{font-size:.9rem;color:#475569;min-width:100px;font-weight:600}
+.sim-row input,.sim-row select{flex:1;min-width:120px;padding:10px 14px;border:1px solid #cbd5e1;border-radius:8px;font-size:1rem;min-height:44px}
+.sim-row input:focus,.sim-row select:focus{outline:none;border-color:#2563eb;box-shadow:0 0 0 3px rgba(37,99,235,.12)}
+.sim-result{margin-top:16px;padding:20px;background:#eff6ff;border-radius:12px;text-align:center}
+.sim-result .amount{font-size:1.75rem;font-weight:800;color:#2563eb}
+.sim-result .desc{font-size:.85rem;color:#475569;margin-top:4px}
+
+/* Comparison Table */
+.comp-table{width:100%;border-collapse:collapse;margin:24px 0;font-size:.88rem}
+.comp-table th,.comp-table td{padding:12px 14px;border:1px solid #e2e8f0;text-align:center}
+.comp-table thead th{background:#1e3a5f;color:#fff;font-weight:600}
+.comp-table thead th:first-child{background:#0f172a}
+.comp-table tbody td:first-child{font-weight:600;background:#f8fafc;text-align:left}
+.comp-table .highlight{background:#eff6ff;font-weight:700;color:#2563eb}
+
+/* Timeline */
+.timeline{position:relative;padding-left:32px;margin:24px 0}
+.timeline::before{content:'';position:absolute;left:11px;top:0;bottom:0;width:3px;background:#dbeafe;border-radius:2px}
+.tl-item{position:relative;padding-bottom:28px}
+.tl-item:last-child{padding-bottom:0}
+.tl-item::before{content:'';position:absolute;left:-25px;top:4px;width:14px;height:14px;background:#2563eb;border-radius:50%;border:3px solid #dbeafe}
+.tl-item.done::before{background:#22c55e}
+.tl-item.active::before{background:#f59e0b;box-shadow:0 0 0 4px rgba(245,158,11,.25)}
+.tl-date{font-size:.78rem;color:#64748b;font-weight:600;margin-bottom:2px}
+.tl-title{font-size:.95rem;font-weight:700;color:#1e293b}
+.tl-desc{font-size:.82rem;color:#64748b;margin-top:2px}
+
+/* Neighborhood */
+.nbr-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:14px;margin:20px 0}
+.nbr-item{background:#fff;border:1px solid #e2e8f0;border-radius:12px;padding:16px;display:flex;gap:12px;align-items:flex-start}
+.nbr-icon{font-size:1.5rem;flex-shrink:0}
+.nbr-name{font-size:.9rem;font-weight:700;color:#1e293b}
+.nbr-dist{font-size:.78rem;color:#64748b}
+
+/* Expert Quote */
+.expert-box{background:linear-gradient(135deg,#0f172a,#1e3a5f);color:#fff;border-radius:16px;padding:28px;margin:24px 0;position:relative}
+.expert-box::before{content:'"';position:absolute;top:8px;left:16px;font-size:4rem;color:rgba(255,255,255,.15);font-family:Georgia,serif;line-height:1}
+.expert-box p{font-size:1rem;line-height:1.8;color:rgba(255,255,255,.92);padding-left:12px}
+.expert-box .expert-name{margin-top:12px;font-size:.82rem;color:#60a5fa;font-weight:600;padding-left:12px}
+
+/* FAQ Accordion */
+.faq-list{margin:20px 0}
+.faq-item{border:1px solid #e2e8f0;border-radius:12px;margin-bottom:10px;overflow:hidden}
+.faq-q{display:flex;justify-content:space-between;align-items:center;padding:16px 20px;cursor:pointer;background:#fff;font-weight:600;font-size:.95rem;color:#1e293b;min-height:44px;user-select:none;transition:background .2s}
+.faq-q:hover{background:#f8fafc}
+.faq-q .arrow{transition:transform .3s;font-size:1.2rem;color:#64748b}
+.faq-item.open .faq-q .arrow{transform:rotate(180deg)}
+.faq-a{max-height:0;overflow:hidden;transition:max-height .35s ease;background:#f8fafc}
+.faq-a-inner{padding:0 20px 16px;font-size:.9rem;color:#475569;line-height:1.8}
+.faq-item.open .faq-a{max-height:400px}
+
+/* Alert Box */
+.alert-box{background:#eff6ff;border:2px solid #2563eb;border-radius:16px;padding:24px;margin:28px 0;text-align:center}
+.alert-box h3{font-size:1.05rem;font-weight:700;color:#1e293b;margin-bottom:12px}
+.alert-form{display:flex;gap:10px;justify-content:center;flex-wrap:wrap}
+.alert-form input[type="email"]{padding:10px 16px;border:1px solid #cbd5e1;border-radius:8px;font-size:1rem;min-height:44px;min-width:220px}
+.alert-form button{background:#2563eb;color:#fff;border:none;padding:10px 24px;border-radius:8px;font-weight:700;font-size:.95rem;cursor:pointer;min-height:44px;transition:background .2s}
+.alert-form button:hover{background:#1d4ed8}
+.alert-msg{margin-top:10px;font-size:.85rem;color:#22c55e;font-weight:600;display:none}

@@ -57,6 +57,87 @@
   <h2>청약 전략 및 유의사항</h2>
   <p>이 단지 청약에서 가장 중요한 변수는 '자금력'입니다. 84㎡ 기준 분양가가 25억원을 넘기 때문에 중도금 대출이 제한되며, 계약금과 중도금을 현금으로 준비해야 합니다. 후분양 단지이므로 입주가 2026년 7월로 임박해 있어, 잔금 마련 계획도 동시에 수립해야 합니다. 전매 제한 기간은 소유권이전등기 시까지이므로, 순수 실거주 목적의 수요자에게 적합한 단지입니다.</p>
   <p>일반분양 물량이 86세대로 매우 적어 당첨 확률이 낮습니다. 특별공급 43세대, 일반공급 43세대로 배분되어 있으며, 가점제 적용 물량이 상당수를 차지합니다. 무주택 기간과 부양가족 수가 높을수록 유리하며, 생애최초·신혼부부 특별공급 자격 해당자는 반드시 검토하시기 바랍니다. 청약 전 반드시 청약홈(applyhome.co.kr)에서 최신 모집공고를 확인하시고, 자격 요건을 꼼꼼히 점검하시길 권장합니다.</p>
+
+  <!-- PRICE SIMULATOR -->
+  <h2>이 현장 월 납입금 계산기</h2>
+  <div class="sim-box" id="sim-form">
+    <div class="sim-row"><label>분양가(만원)</label><input type="number" name="price" value="251500" step="100"></div>
+    <div class="sim-row"><label>자기자금(%)</label><input type="number" name="down" value="40" min="0" max="100"></div>
+    <div class="sim-row"><label>대출금리(%)</label><input type="number" name="rate" value="3.5" step="0.1"></div>
+    <div class="sim-row"><label>상환기간(년)</label><select name="years"><option value="20">20년</option><option value="30" selected>30년</option><option value="40">40년</option></select></div>
+    <div class="sim-result">
+      <div class="amount" id="sim-amount">0원</div>
+      <div class="desc" id="sim-total">대출금 0만원 / 30년 원리금균등</div>
+    </div>
+  </div>
+
+  <!-- COMPARISON TABLE -->
+  <h2>오티에르 반포 vs 주변 현장 비교</h2>
+  <div style="overflow-x:auto">
+  <table class="comp-table">
+    <thead><tr><th>항목</th><th class="highlight">오티에르 반포</th><th>래미안 원펜타스</th><th>아크로리버파크</th></tr></thead>
+    <tbody>
+      <tr><td>위치</td><td class="highlight">서초구 잠원동</td><td>서초구 반포동</td><td>서초구 반포동</td></tr>
+      <tr><td>세대수</td><td class="highlight">251세대</td><td>641세대</td><td>1,612세대</td></tr>
+      <tr><td>84㎡ 기준가</td><td class="highlight">25.1억~</td><td>25.8억~</td><td>시세 45억~</td></tr>
+      <tr><td>시세차익</td><td class="highlight">~20억</td><td>~19억</td><td>기축(해당없음)</td></tr>
+      <tr><td>역세권</td><td class="highlight">3·7·9호선</td><td>9호선</td><td>3·7·9호선</td></tr>
+      <tr><td>학군</td><td class="highlight">반포중·서초고</td><td>반포중·세화고</td><td>반포중·세화고</td></tr>
+      <tr><td>입주</td><td class="highlight">2026.07</td><td>2025 입주</td><td>2016 입주</td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <!-- TIMELINE -->
+  <h2>분양 → 입주까지 타임라인</h2>
+  <div class="timeline">
+    <div class="tl-item done"><div class="tl-date">2026.04.01</div><div class="tl-title">모집공고 발표</div><div class="tl-desc">입주자모집공고문 확인 및 자격 요건 점검</div></div>
+    <div class="tl-item active"><div class="tl-date">2026.04.10~15</div><div class="tl-title">청약 접수</div><div class="tl-desc">특별공급(10일) → 1순위(11~14일) → 2순위(15일)</div></div>
+    <div class="tl-item"><div class="tl-date">2026.04.21</div><div class="tl-title">당첨자 발표</div><div class="tl-desc">청약홈에서 당첨 여부 확인</div></div>
+    <div class="tl-item"><div class="tl-date">2026.05 초</div><div class="tl-title">서류 제출 및 정당계약</div><div class="tl-desc">자격 서류 준비, 계약금 납부(분양가의 20%)</div></div>
+    <div class="tl-item"><div class="tl-date">2026.07</div><div class="tl-title">입주 및 잔금 납부</div><div class="tl-desc">후분양 단지이므로 잔금 즉시 납부, 등기 진행</div></div>
+  </div>
+
+  <!-- NEIGHBORHOOD -->
+  <h2>주변 인프라</h2>
+  <div class="nbr-grid">
+    <div class="nbr-item"><div class="nbr-icon">🚇</div><div><div class="nbr-name">고속터미널역 (3·7·9호선)</div><div class="nbr-dist">도보 10분</div></div></div>
+    <div class="nbr-item"><div class="nbr-icon">🚇</div><div><div class="nbr-name">잠원역 (3호선)</div><div class="nbr-dist">도보 7분</div></div></div>
+    <div class="nbr-item"><div class="nbr-icon">🏫</div><div><div class="nbr-name">반포중학교</div><div class="nbr-dist">도보 8분</div></div></div>
+    <div class="nbr-item"><div class="nbr-icon">🏫</div><div><div class="nbr-name">서초고등학교</div><div class="nbr-dist">도보 12분</div></div></div>
+    <div class="nbr-item"><div class="nbr-icon">🛒</div><div><div class="nbr-name">신세계백화점 강남점</div><div class="nbr-dist">차량 5분</div></div></div>
+    <div class="nbr-item"><div class="nbr-icon">🏥</div><div><div class="nbr-name">가톨릭대학교 서울성모병원</div><div class="nbr-dist">차량 7분</div></div></div>
+    <div class="nbr-item"><div class="nbr-icon">🌳</div><div><div class="nbr-name">반포한강공원</div><div class="nbr-dist">도보 10분</div></div></div>
+    <div class="nbr-item"><div class="nbr-icon">🏢</div><div><div class="nbr-name">센트럴시티(고속터미널)</div><div class="nbr-dist">도보 10분</div></div></div>
+  </div>
+
+  <!-- EXPERT QUOTE -->
+  <h2>전문가가 본 이 현장의 가치</h2>
+  <div class="expert-box">
+    <p>포스코이앤씨의 최상위 브랜드 '오티에르' 첫 단지라는 상징성이 크다. 반포 생활권 한강 접근성과 트리플 역세권이라는 입지가 장기적 자산 가치를 보장한다. 84㎡ 기준 시세 대비 약 20억원 차익이 기대되나, 25억 이상 현금 동원이 관건이다.</p>
+    <div class="expert-name">— 더에셋스퀘어 분양분석팀</div>
+  </div>
+
+  <!-- FAQ -->
+  <h2>자주 묻는 질문</h2>
+  <div class="faq-list">
+    <div class="faq-item"><div class="faq-q">오티에르 반포 청약 자격 요건은?<span class="arrow">▼</span></div><div class="faq-a"><div class="faq-a-inner">서울 거주 만 19세 이상 무주택 세대구성원이 기본 자격입니다. 분양가 상한제 적용 단지이므로 거주지 우선 공급(서울 거주자 우선)이 적용되며, 가점제 비율이 높습니다. 특별공급은 신혼부부·생애최초·다자녀 등이 있으며, 각 자격별 소득 기준을 충족해야 합니다.</div></div></div>
+    <div class="faq-item"><div class="faq-q">계약금과 중도금은 얼마나 필요한가?<span class="arrow">▼</span></div><div class="faq-a"><div class="faq-a-inner">후분양 단지이므로 계약 시 계약금(분양가의 20%, 약 5억원 이상)을 납부하고, 입주 시 잔금(80%)을 일시 납부합니다. 15억 초과 단지이므로 중도금 대출이 불가하며, 전액 자기자금으로 마련해야 합니다.</div></div></div>
+    <div class="faq-item"><div class="faq-q">전매 제한 기간은?<span class="arrow">▼</span></div><div class="faq-a"><div class="faq-a-inner">분양가 상한제 적용 단지로 전매 제한 기간은 소유권이전등기 시까지입니다. 등기 후에도 거주 의무 기간이 있을 수 있으므로, 모집공고문을 반드시 확인하세요.</div></div></div>
+    <div class="faq-item"><div class="faq-q">주변 시세와 비교하면?<span class="arrow">▼</span></div><div class="faq-a"><div class="faq-a-inner">인근 아크로리버파크 84㎡ 시세가 약 45억원, 래미안퍼스티지가 약 42억원입니다. 오티에르 반포 84㎡ 분양가가 25~27억대이므로, 약 15~20억원의 시세차익이 기대됩니다.</div></div></div>
+    <div class="faq-item"><div class="faq-q">입주 시기는 정확히 언제인가?<span class="arrow">▼</span></div><div class="faq-a"><div class="faq-a-inner">2026년 7월 입주 예정입니다. 후분양 단지이므로 건물이 이미 완공 단계에 있으며, 계약 후 약 2~3개월 내 입주가 가능합니다.</div></div></div>
+  </div>
+
+  <!-- ALERT -->
+  <div class="alert-box">
+    <h3>오티에르 반포 청약 결과·가격 변동 알림받기</h3>
+    <form class="alert-form" id="alert-form">
+      <input type="email" placeholder="이메일 주소 입력" required>
+      <button type="submit">알림 등록</button>
+    </form>
+    <div class="alert-msg" id="alert-msg"></div>
+  </div>
+
 </div>
 
 <footer class="site-footer"><p>© 2026 더에셋스퀘어. 부동산분양 전문 정보 플랫폼.</p><p>분양 데이터 출처: 청약홈, 뉴스핌, 호갱노노 (2026.04.03 기준)</p></footer>

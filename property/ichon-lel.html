@@ -58,6 +58,75 @@
   <h2>청약 전략 및 자금 계획</h2>
   <p>이 단지 청약의 핵심은 '현금 동원력'입니다. 최소 분양가가 25억 9,200만원으로, 중도금 대출이 사실상 불가능한 15억원 초과 단지입니다. 계약금 20%(약 5억원 이상)부터 중도금까지 전액 자기자금으로 마련해야 하므로, 사전에 자금 조달 계획을 면밀히 수립해야 합니다. 특별공급 4월 9일을 시작으로 10일 1순위 해당지역, 13일 1순위 기타지역, 14일 2순위 순으로 접수가 진행됩니다.</p>
   <p>일반분양 88세대 중 특별공급을 제외한 일반공급 물량은 매우 적습니다. 서울 거주 무주택자로서 가점이 높은 수요자가 유리하며, 부양가족 수와 무주택 기간이 당첨의 핵심 변수입니다. 당첨 후 전매 제한은 소유권이전등기 시까지이므로 실거주 의사가 확실한 분들에게 권장합니다.</p>
+
+  <h2>이 현장 월 납입금 계산기</h2>
+  <div class="sim-box" id="sim-form">
+    <div class="sim-row"><label>분양가(만원)</label><input type="number" name="price" value="259200" step="100"></div>
+    <div class="sim-row"><label>자기자금(%)</label><input type="number" name="down" value="50" min="0" max="100"></div>
+    <div class="sim-row"><label>대출금리(%)</label><input type="number" name="rate" value="3.5" step="0.1"></div>
+    <div class="sim-row"><label>상환기간(년)</label><select name="years"><option value="20">20년</option><option value="30" selected>30년</option><option value="40">40년</option></select></div>
+    <div class="sim-result"><div class="amount" id="sim-amount">0원</div><div class="desc" id="sim-total">대출금 0만원 / 30년 원리금균등</div></div>
+  </div>
+
+  <h2>이촌 르엘 vs 주변 현장 비교</h2>
+  <div style="overflow-x:auto">
+  <table class="comp-table">
+    <thead><tr><th>항목</th><th class="highlight">이촌 르엘</th><th>래미안 이촌 첼시</th><th>이촌 한가람</th></tr></thead>
+    <tbody>
+      <tr><td>위치</td><td class="highlight">용산구 이촌동</td><td>용산구 이촌동</td><td>용산구 이촌동</td></tr>
+      <tr><td>세대수</td><td class="highlight">750세대</td><td>480세대</td><td>1,500세대</td></tr>
+      <tr><td>100㎡ 기준</td><td class="highlight">25.9억~</td><td>시세 48억~</td><td>시세 32억~</td></tr>
+      <tr><td>시세차익</td><td class="highlight">~26억</td><td>기축</td><td>기축</td></tr>
+      <tr><td>역세권</td><td class="highlight">4호선·경의중앙선</td><td>4호선</td><td>4호선·경의중앙선</td></tr>
+      <tr><td>한강 접근</td><td class="highlight">도보 5분</td><td>도보 3분</td><td>도보 7분</td></tr>
+      <tr><td>입주</td><td class="highlight">2029 예정</td><td>2010 입주</td><td>1999 입주</td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <h2>분양 → 입주까지 타임라인</h2>
+  <div class="timeline">
+    <div class="tl-item done"><div class="tl-date">2026.03.30</div><div class="tl-title">모집공고 발표</div><div class="tl-desc">입주자모집공고문 및 견본주택 개관</div></div>
+    <div class="tl-item active"><div class="tl-date">2026.04.09~14</div><div class="tl-title">청약 접수</div><div class="tl-desc">특별공급(9일) → 1순위 해당(10일) → 기타(13일) → 2순위(14일)</div></div>
+    <div class="tl-item"><div class="tl-date">2026.04.20</div><div class="tl-title">당첨자 발표</div><div class="tl-desc">청약홈에서 확인, 부적격 검증 시작</div></div>
+    <div class="tl-item"><div class="tl-date">2026.05.02~04</div><div class="tl-title">정당계약</div><div class="tl-desc">계약금 20% 납부 (약 5.2억원~)</div></div>
+    <div class="tl-item"><div class="tl-date">2026~2029</div><div class="tl-title">중도금 납부</div><div class="tl-desc">6회 분할 (15억 초과, 대출 불가 → 자기자금)</div></div>
+    <div class="tl-item"><div class="tl-date">2029년</div><div class="tl-title">잔금 납부 및 입주</div><div class="tl-desc">잔금 납부, 소유권이전등기</div></div>
+  </div>
+
+  <h2>주변 인프라</h2>
+  <div class="nbr-grid">
+    <div class="nbr-item"><div class="nbr-icon">🚇</div><div><div class="nbr-name">이촌역 (4호선·경의중앙선)</div><div class="nbr-dist">도보 6분</div></div></div>
+    <div class="nbr-item"><div class="nbr-icon">🚄</div><div><div class="nbr-name">용산역 (KTX·GTX-A)</div><div class="nbr-dist">차량 8분</div></div></div>
+    <div class="nbr-item"><div class="nbr-icon">🏫</div><div><div class="nbr-name">이촌초등학교</div><div class="nbr-dist">도보 5분</div></div></div>
+    <div class="nbr-item"><div class="nbr-icon">🏛️</div><div><div class="nbr-name">국립중앙박물관</div><div class="nbr-dist">도보 10분</div></div></div>
+    <div class="nbr-item"><div class="nbr-icon">🌳</div><div><div class="nbr-name">이촌한강공원</div><div class="nbr-dist">도보 5분</div></div></div>
+    <div class="nbr-item"><div class="nbr-icon">🏥</div><div><div class="nbr-name">순천향대학교 병원</div><div class="nbr-dist">차량 7분</div></div></div>
+    <div class="nbr-item"><div class="nbr-icon">🛒</div><div><div class="nbr-name">이마트 용산점</div><div class="nbr-dist">차량 5분</div></div></div>
+    <div class="nbr-item"><div class="nbr-icon">🌿</div><div><div class="nbr-name">용산공원(조성중)</div><div class="nbr-dist">차량 5분</div></div></div>
+  </div>
+
+  <h2>전문가가 본 이 현장의 가치</h2>
+  <div class="expert-box">
+    <p>강북 최초 하이엔드 브랜드 단지로, 100㎡ 이상 중대형만 공급하여 이촌동의 프리미엄 정체성을 완성한다. 용산공원 조성과 GTX-A 개통이라는 이중 호재가 장기 시세 상승을 견인할 것이다. 122㎡ 당첨 시 최대 26억원 차익이 전망되나, 전액 현금 납부가 필수적이다.</p>
+    <div class="expert-name">— 더에셋스퀘어 분양분석팀</div>
+  </div>
+
+  <h2>자주 묻는 질문</h2>
+  <div class="faq-list">
+    <div class="faq-item"><div class="faq-q">이촌 르엘 일반분양 물량은?<span class="arrow">▼</span></div><div class="faq-a"><div class="faq-a-inner">총 750세대 중 일반분양은 88세대입니다. 전용 100㎡~122㎡ 중대형 평형만으로 구성되어 있어, 3~4인 이상 가구에 적합합니다.</div></div></div>
+    <div class="faq-item"><div class="faq-q">대출이 가능한가?<span class="arrow">▼</span></div><div class="faq-a"><div class="faq-a-inner">최소 분양가가 25.9억원으로 15억 초과 단지이므로, 주택담보대출(중도금·잔금) 이용이 원칙적으로 불가합니다. 계약금(20%)부터 잔금까지 전액 자기자금으로 마련해야 합니다.</div></div></div>
+    <div class="faq-item"><div class="faq-q">용산공원은 언제 완성되나?<span class="arrow">▼</span></div><div class="faq-a"><div class="faq-a-inner">용산공원은 단계별로 조성 중이며, 1단계 구역은 2027년 부분 개방이 예정되어 있습니다. 전체 완공은 2030년대 초로 전망됩니다. 공원 완성 시 이촌동 일대 주거 가치는 한 단계 더 상승할 것입니다.</div></div></div>
+    <div class="faq-item"><div class="faq-q">한강 조망이 가능한가?<span class="arrow">▼</span></div><div class="faq-a"><div class="faq-a-inner">단지가 한강에서 약 300m 거리에 위치하며, 고층 세대의 경우 한강 조망이 가능합니다. 다만 동·호수별로 조망 조건이 다르므로, 견본주택에서 동·호배치도를 확인하세요.</div></div></div>
+    <div class="faq-item"><div class="faq-q">청약 가점은 몇 점이 필요한가?<span class="arrow">▼</span></div><div class="faq-a"><div class="faq-a-inner">일반분양 88세대로 극소량이므로, 가점 70점 이상이 유리할 것으로 예상됩니다. 무주택 기간 15년 이상, 부양가족 3명 이상이면 경쟁력이 있습니다.</div></div></div>
+  </div>
+
+  <div class="alert-box">
+    <h3>이촌 르엘 당첨 결과·가격 변동 알림받기</h3>
+    <form class="alert-form" id="alert-form"><input type="email" placeholder="이메일 주소 입력" required><button type="submit">알림 등록</button></form>
+    <div class="alert-msg" id="alert-msg"></div>
+  </div>
+
 </div>
 
 <footer class="site-footer"><p>© 2026 더에셋스퀘어. 부동산분양 전문 정보 플랫폼.</p><p>분양 데이터 출처: 청약홈, 뉴스핌, 한국경제 (2026.04.03 기준)</p></footer>

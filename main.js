@@ -138,14 +138,68 @@ document.addEventListener('DOMContentLoaded', function() {
     q.addEventListener('click', function() {
       var item = this.closest('.faq-item');
       var wasOpen = item.classList.contains('open');
-      // Close all
       document.querySelectorAll('.faq-item').forEach(function(i) {
         i.classList.remove('open');
       });
-      // Toggle clicked
       if (!wasOpen) item.classList.add('open');
     });
   });
+
+  // ===== Checklist 분양 체크리스트 =====
+  document.querySelectorAll('.checklist-item').forEach(function(item) {
+    item.addEventListener('click', function() {
+      this.classList.toggle('checked');
+      this.querySelector('.check-icon').textContent = this.classList.contains('checked') ? '✓' : '';
+      var box = this.closest('.checklist-box');
+      if (box) {
+        var total = box.querySelectorAll('.checklist-item').length;
+        var done = box.querySelectorAll('.checklist-item.checked').length;
+        var bar = box.querySelector('.checklist-progress-bar');
+        if (bar) bar.style.width = Math.round((done / total) * 100) + '%';
+      }
+    });
+  });
+
+  // ===== Compare 비교하기 =====
+  var compareList = [];
+  var compareBar = document.getElementById('compare-bar');
+  document.querySelectorAll('.compare-btn').forEach(function(btn) {
+    btn.addEventListener('click', function(e) {
+      e.preventDefault();
+      e.stopPropagation();
+      var name = this.dataset.name;
+      var url = this.dataset.url;
+      if (this.classList.contains('added')) {
+        this.classList.remove('added');
+        this.textContent = '📊 비교담기';
+        compareList = compareList.filter(function(c) { return c.name !== name; });
+      } else {
+        if (compareList.length >= 3) { alert('최대 3개까지 비교할 수 있습니다.'); return; }
+        this.classList.add('added');
+        this.textContent = '✓ 비교중';
+        compareList.push({ name: name, url: url });
+      }
+      if (compareBar) {
+        if (compareList.length > 0) {
+          compareBar.classList.add('show');
+          compareBar.querySelector('.compare-count').textContent = compareList.length + '개 선택';
+        } else {
+          compareBar.classList.remove('show');
+        }
+      }
+    });
+  });
+  if (compareBar) {
+    var clearBtn = compareBar.querySelector('.clear-btn');
+    if (clearBtn) clearBtn.addEventListener('click', function() {
+      compareList = [];
+      document.querySelectorAll('.compare-btn.added').forEach(function(b) {
+        b.classList.remove('added');
+        b.textContent = '📊 비교담기';
+      });
+      compareBar.classList.remove('show');
+    });
+  }
 
 
 });

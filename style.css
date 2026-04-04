@@ -196,3 +196,41 @@ button,a{min-height:44px;min-width:44px}
 .alert-msg{margin-top:10px;font-size:.85rem;color:#22c55e;font-weight:600;display:none}
 .alert-form-link{display:inline-block;background:#2563eb;color:#fff;padding:12px 28px;border-radius:8px;font-weight:700;font-size:1rem;text-decoration:none;min-height:44px;transition:background .2s;text-align:center}
 .alert-form-link:hover{background:#1d4ed8}
+
+/* ===== CHECKLIST 분양 체크리스트 ===== */
+.checklist-box{background:#fff;border:2px solid #e2e8f0;border-radius:16px;padding:24px;margin:28px 0}
+.checklist-box h3{font-size:1.05rem;font-weight:700;color:#1e293b;margin-bottom:16px}
+.checklist-item{display:flex;align-items:center;gap:12px;padding:12px 0;border-bottom:1px solid #f1f5f9;cursor:pointer;user-select:none;min-height:44px}
+.checklist-item:last-child{border-bottom:none}
+.checklist-item .check-icon{width:28px;height:28px;border:2px solid #cbd5e1;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:1rem;transition:all .2s;flex-shrink:0}
+.checklist-item.checked .check-icon{background:#2563eb;border-color:#2563eb;color:#fff}
+.checklist-item .check-label{font-size:.95rem;color:#334155;line-height:1.5}
+.checklist-item.checked .check-label{color:#94a3b8;text-decoration:line-through}
+.checklist-progress{margin-top:12px;height:6px;background:#e2e8f0;border-radius:3px;overflow:hidden}
+.checklist-progress-bar{height:100%;background:linear-gradient(90deg,#2563eb,#60a5fa);border-radius:3px;transition:width .3s;width:0}
+
+/* ===== COMPARE BUTTON ===== */
+.compare-btn{display:inline-flex;align-items:center;gap:6px;background:#f8fafc;border:1px solid #e2e8f0;padding:6px 12px;border-radius:6px;font-size:.75rem;color:#64748b;cursor:pointer;min-height:32px;transition:all .2s;margin-top:8px}
+.compare-btn:hover{background:#eff6ff;border-color:#2563eb;color:#2563eb}
+.compare-btn.added{background:#2563eb;color:#fff;border-color:#2563eb}
+.compare-bar{position:fixed;bottom:90px;left:50%;transform:translateX(-50%);background:#0f172a;color:#fff;padding:12px 24px;border-radius:12px;z-index:250;display:none;align-items:center;gap:16px;box-shadow:0 8px 30px rgba(0,0,0,.3);font-size:.9rem}
+.compare-bar.show{display:flex}
+.compare-bar button{background:#2563eb;color:#fff;border:none;padding:8px 20px;border-radius:8px;font-weight:700;cursor:pointer;min-height:36px}
+.compare-bar .clear-btn{background:transparent;border:1px solid #475569;color:#94a3b8;font-weight:400}
+
+/* ===== FLOOR PLAN GALLERY ===== */
+.floorplan-gallery{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;padding:8px 0 16px}
+.floorplan-gallery::-webkit-scrollbar{height:4px}
+.floorplan-gallery::-webkit-scrollbar-thumb{background:#cbd5e1;border-radius:2px}
+.floorplan-item{flex:0 0 280px;scroll-snap-align:start;background:#fff;border:1px solid #e2e8f0;border-radius:12px;padding:16px;text-align:center}
+.floorplan-item .fp-icon{font-size:3rem;margin-bottom:8px}
+.floorplan-item .fp-type{font-size:1rem;font-weight:700;color:#1e293b}
+.floorplan-item .fp-size{font-size:.85rem;color:#64748b;margin-top:4px}
+.floorplan-item .fp-rooms{font-size:.8rem;color:#2563eb;font-weight:600;margin-top:8px}
+
+/* ===== ALERT TEASER (traffic driver) ===== */
+.alert-teaser{background:linear-gradient(135deg,#1e40af 0%,#2563eb 100%);border-radius:16px;padding:28px 24px;margin:32px 0;text-align:center}
+.alert-teaser h3{color:#fff;font-size:1.1rem;font-weight:700;margin-bottom:8px}
+.alert-teaser p{color:#bfdbfe;font-size:.9rem;margin-bottom:16px}
+.alert-teaser a{display:inline-block;background:#fff;color:#2563eb;padding:12px 28px;border-radius:8px;font-weight:700;font-size:1rem;text-decoration:none;min-height:44px;transition:all .2s}
+.alert-teaser a:hover{background:#f0f9ff;transform:translateY(-2px);box-shadow:0 4px 12px rgba(0,0,0,.2)}

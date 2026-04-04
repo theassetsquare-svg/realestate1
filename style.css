@@ -194,3 +194,5 @@ button,a{min-height:44px;min-width:44px}
 .alert-form button{background:#2563eb;color:#fff;border:none;padding:10px 24px;border-radius:8px;font-weight:700;font-size:.95rem;cursor:pointer;min-height:44px;transition:background .2s}
 .alert-form button:hover{background:#1d4ed8}
 .alert-msg{margin-top:10px;font-size:.85rem;color:#22c55e;font-weight:600;display:none}
+.alert-form-link{display:inline-block;background:#2563eb;color:#fff;padding:12px 28px;border-radius:8px;font-weight:700;font-size:1rem;text-decoration:none;min-height:44px;transition:background .2s;text-align:center}
+.alert-form-link:hover{background:#1d4ed8}

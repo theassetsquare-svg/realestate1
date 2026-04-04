@@ -117,21 +117,5 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
 
-  // ===== Alert Email =====
-  var alertForm = document.getElementById('alert-form');
-  if (alertForm) {
-    alertForm.addEventListener('submit', function(e) {
-      e.preventDefault();
-      var emailInput = this.querySelector('input[type="email"]');
-      var msg = document.getElementById('alert-msg');
-      if (emailInput && emailInput.value) {
-        if (msg) {
-          msg.style.display = 'block';
-          msg.textContent = emailInput.value + '로 알림이 등록되었습니다.';
-        }
-        emailInput.value = '';
-      }
-    });
-  }
 
 });

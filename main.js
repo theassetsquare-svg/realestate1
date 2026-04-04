@@ -6,6 +6,17 @@ document.addEventListener('DOMContentLoaded', function() {
   var searchResults = document.getElementById('search-results');
   if (searchInput && searchResults) {
     var properties = [
+      {name:'서울원아이파크',meta:'서울 노원구 · 3,032세대 · 84㎡ 10.4~12.1억',url:'/property/seoul-one-ipark.html'},
+      {name:'더샵신길센트럴시티',meta:'서울 영등포구 · 2,054세대 · 84㎡ 18.8억',url:'/property/thesharp-singil.html'},
+      {name:'래미안엘라비네',meta:'서울 강서구 · 557세대 · 강서구 첫 래미안',url:'/property/raemian-elravine.html'},
+      {name:'아크로드서초',meta:'서울 서초구 · 1,161세대 · 역대최고 1,099:1',url:'/property/acro-de-seocho.html'},
+      {name:'더샵프리엘라',meta:'서울 영등포구 문래동 · 324세대 · 84㎡ 17억',url:'/property/thesharp-priella.html'},
+      {name:'아크로리버스카이',meta:'서울 동작구 · 아크로 프리미엄',url:'/property/acro-river-sky.html'},
+      {name:'써밋더힐',meta:'서울 동작구 흑석동 · 1,515세대 · 준강남',url:'/property/summit-thehill.html'},
+      {name:'한화포레나부산당리',meta:'부산 사하구 · 543세대 · 더블역세권',url:'/property/forena-busan-dangri.html'},
+      {name:'창원자이더스카이',meta:'경남 창원시 · 519세대 · 49층 초고층',url:'/property/changwon-xi-sky.html'},
+      {name:'시흥거모호반써밋',meta:'경기 시흥시 · 353세대 · 분양가상한제',url:'/property/siheung-hoban.html'},
+      {name:'해링턴플레이스오룡역',meta:'대전 중구 · 427세대 · 84㎡ 5.7~6.8억',url:'/property/harrington-oryong.html'},
       {name:'오티에르 반포',meta:'서울 서초구 잠원동 · 251세대 · 청약중 4/10~15',url:'/property/otier-banpo.html'},
       {name:'이촌 르엘',meta:'서울 용산구 이촌동 · 750세대 · 청약중 4/9~14',url:'/property/ichon-lel.html'},
       {name:'라클라체자이드파인',meta:'서울 동작구 노량진동 · 1,499세대 · 청약중 4/13~16',url:'/property/laclache-zaide-fine.html'},

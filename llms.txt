@@ -1,6 +1,6 @@
 # 더에셋스퀘어 — 부동산분양 전문 정보 플랫폼
 
-> 2026년 4월 기준 부동산분양 현장을 청약홈(applyhome.co.kr) 공식 데이터로 검증하여 제공합니다. 아파트, 오피스텔, 상가, 지식산업센터, 토지, 산업단지 분양 정보. 문의전화 1666-6838. 메인사이트: https://man-tjn.pages.dev/
+> 2026년 4월 기준 부동산분양 현장을 청약홈(applyhome.co.kr) 공식 데이터로 검증하여 제공합니다. 아파트, 오피스텔, 상가, 지식산업센터, 토지, 산업단지 분양 정보. 문의전화 1666-6838. 메인사이트: https://theassetsquare.com/
 
 ## Pages
 - [홈페이지](https://realestate1-3xh.pages.dev/) — 부동산분양 2026 핵심 현장 총정리
@@ -72,4 +72,4 @@
 ## Contact
 - 전화: 1666-6838
 - 이메일: theassetsquare@gmail.com
-- 메인사이트: https://man-tjn.pages.dev/
+- 메인사이트: https://theassetsquare.com/

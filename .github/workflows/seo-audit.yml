@@ -1,0 +1,37 @@
+name: SEO & Debug Audit (24h)
+
+# 24시간 자동화: 매일 정기 점검 + push 시점 점검.
+# 1) seo_audit.py  — 키워드 스터핑/중복 title·desc/깨진 자산/JSON-LD/사이트맵 (소스)
+# 2) live_check.py — 배포된 53개 페이지 HTTP 200·고유 title·신규 CSS·og·전화번호·스터핑·soft-404
+on:
+  push:
+    branches: [main]
+  schedule:
+    - cron: "0 0 * * *"   # 매일 00:00 UTC (09:00 KST)
+  workflow_dispatch: {}
+
+permissions:
+  contents: read
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Source audit (keyword stuffing / SEO / debug)
+        run: python3 tools/seo_audit.py
+
+  live:
+    runs-on: ubuntu-latest
+    needs: audit
+    if: ${{ always() }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Live site verification (all 53 pages)
+        run: python3 tools/live_check.py

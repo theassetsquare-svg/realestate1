@@ -86,7 +86,15 @@ document.addEventListener('DOMContentLoaded', function() {
   var nav = document.querySelector('.nav-links');
   if (burger && nav) {
     burger.addEventListener('click', function() {
-      nav.classList.toggle('show');
+      var open = nav.classList.toggle('show');
+      burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+    // close the drawer after a destination is chosen
+    nav.querySelectorAll('a').forEach(function(link) {
+      link.addEventListener('click', function() {
+        nav.classList.remove('show');
+        burger.setAttribute('aria-expanded', 'false');
+      });
     });
   }
 

@@ -1,4 +1,6 @@
 # Static multi-page site (Cloudflare Pages).
-# No SPA catch-all: real .html files are served directly, and unknown paths
-# must return a real 404 — a "/* /index.html 200" fallback would turn every
-# bad URL (and /og-home.png) into a soft-404 of the homepage, hurting SEO.
+# Real .html files and assets are served directly (before these rules).
+# Unknown paths must return a REAL 404 — never a soft-404 of the homepage,
+# which would create duplicate-content / soft-404 SEO problems and break
+# /og-home.png. This catch-all serves the 404 page with a 404 status.
+/*    /404.html    404

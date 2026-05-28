@@ -188,6 +188,8 @@ def audit():
         listed = set(re.findall(r"<loc>(.*?)</loc>", sm))
         for f in files:
             r = rel(f)
+            if r == "404.html":
+                continue  # error page must NOT be in sitemap
             url = SITE + "/" + ("" if r == "index.html" else r)
             if url not in listed:
                 errors.append(f"sitemap 누락: {url}")

@@ -128,9 +128,10 @@ def audit():
             errors.append(f"{r}: <title> 없음")
         elif len(title) > TITLE_MAX:
             warns.append(f"{r}: title {len(title)}자 (>{TITLE_MAX})")
+        noindex = "noindex" in (robots or "").lower()
         if not desc:
             errors.append(f"{r}: meta description 없음")
-        elif not (DESC_MIN <= len(desc) <= DESC_MAX):
+        elif not noindex and not (DESC_MIN <= len(desc) <= DESC_MAX):
             warns.append(f"{r}: description {len(desc)}자 (권장 {DESC_MIN}-{DESC_MAX})")
         if not canonical:
             errors.append(f"{r}: canonical 없음")
@@ -143,10 +144,11 @@ def audit():
         if PRIMARY not in text_ns and r in ("index.html",):
             errors.append(f"{r}: 홈에 '{PRIMARY}' 키워드 없음")
 
-        # keyword stuffing (any keyword over MAX)
-        for kw, d in dens.items():
-            if d > DENSITY_MAX:
-                errors.append(f"{r}: 키워드 스터핑 '{kw}' 밀도 {d}% (>{DENSITY_MAX}%)")
+        # keyword stuffing (any keyword over MAX) — skip noindex pages (not ranked)
+        if not noindex:
+            for kw, d in dens.items():
+                if d > DENSITY_MAX:
+                    errors.append(f"{r}: 키워드 스터핑 '{kw}' 밀도 {d}% (>{DENSITY_MAX}%)")
 
         # asset refs
         for url in re.findall(r'(?:href|src|content)="([^"]+\.(?:png|jpg|jpeg|webp|ico|css|js|svg))(?:\?[^"]*)?"', html):

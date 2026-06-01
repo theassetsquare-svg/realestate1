@@ -42,7 +42,8 @@ jobs:
         run: |
           mkdir -p ~/.gsc
           if [ -n "$GSC_KEY_JSON_B64" ]; then
-            echo "$GSC_KEY_JSON_B64" | base64 -d > ~/.gsc/theasset-gsc.json
+            # python tolerates whitespace and embedded newlines in the base64 input
+            python3 -c "import os,base64,re; b=re.sub(r'[^A-Za-z0-9+/=]','',os.environ['GSC_KEY_JSON_B64']); open(os.path.expanduser('~/.gsc/theasset-gsc.json'),'wb').write(base64.b64decode(b))"
             echo "→ decoded from base64"
           elif [ -n "$GSC_KEY_JSON" ]; then
             python3 -c "import os; open(os.path.expanduser('~/.gsc/theasset-gsc.json'),'w').write(os.environ['GSC_KEY_JSON'])"

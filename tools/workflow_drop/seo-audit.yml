@@ -36,12 +36,21 @@ jobs:
           python-version: "3.12"
 
       - name: Restore GSC service account key
-        if: ${{ env.GSC_KEY_JSON != '' }}
         env:
+          GSC_KEY_JSON_B64: ${{ secrets.GSC_KEY_JSON_B64 }}
           GSC_KEY_JSON: ${{ secrets.GSC_KEY_JSON }}
         run: |
           mkdir -p ~/.gsc
-          python3 -c "import os; open(os.path.expanduser('~/.gsc/theasset-gsc.json'),'w').write(os.environ['GSC_KEY_JSON'])"
+          if [ -n "$GSC_KEY_JSON_B64" ]; then
+            echo "$GSC_KEY_JSON_B64" | base64 -d > ~/.gsc/theasset-gsc.json
+            echo "→ decoded from base64"
+          elif [ -n "$GSC_KEY_JSON" ]; then
+            python3 -c "import os; open(os.path.expanduser('~/.gsc/theasset-gsc.json'),'w').write(os.environ['GSC_KEY_JSON'])"
+            echo "→ wrote raw JSON"
+          else
+            echo "→ no GSC secret set, skipping"
+            exit 0
+          fi
           chmod 600 ~/.gsc/theasset-gsc.json
           python3 -c "import json,os; json.load(open(os.path.expanduser('~/.gsc/theasset-gsc.json'))); print('GSC key JSON OK')"
 

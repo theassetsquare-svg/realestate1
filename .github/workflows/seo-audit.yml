@@ -41,13 +41,13 @@ jobs:
           GSC_KEY_JSON: ${{ secrets.GSC_KEY_JSON }}
         run: |
           mkdir -p ~/.gsc
-          printf '%s' "$GSC_KEY_JSON" > ~/.gsc/theasset-gsc.json
+          python3 -c "import os; open(os.path.expanduser('~/.gsc/theasset-gsc.json'),'w').write(os.environ['GSC_KEY_JSON'])"
           chmod 600 ~/.gsc/theasset-gsc.json
+          python3 -c "import json,os; json.load(open(os.path.expanduser('~/.gsc/theasset-gsc.json'))); print('GSC key JSON OK')"
 
       - name: Run audit pipeline
         env:
           GSC_KEY: /home/runner/.gsc/theasset-gsc.json
-          GSC_TODAY: ""   # leave empty → script uses 2026-06-01 default; override per-run if needed
         run: |
           python3 tools/auto_pipeline.py || true
           ls -la tools/audit_reports/ | tail -20

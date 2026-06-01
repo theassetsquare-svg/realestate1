@@ -1,77 +1,77 @@
 name: SEO & GSC Auto Pipeline (24h)
 
-  # 24시간 자동화: 매일 정기 점검 + push 시점 점검.
-  #   1) seo_audit.py    — 키워드 스터핑/중복 title·desc/깨진 자산/JSON-LD/사이트맵
-  #   2) cannibal_check  — 카니발리제이션/중복 H1·canonical
-  #   3) bug_check       — 인라인핸들러/접근성/HTTP mixed-content/깨진 링크
-  #   4) live_check.py   — 배포 53페이지 HTTP 200·고유 title·신규 CSS·og·스터핑
-  #   5) gsc_monitor     — 28일 GSC 쿼리/페이지/카니발/낮은 CTR/노출 0 페이지
-  #   6) notify          — 이슈 발견 시 theassetsquare@gmail.com 메일 발송
-  #   7) issue_inbox     — Gmail 에서 [더에셋스퀘어] 이슈 메일 자동 처리
-  #
-  # 필요한 Secrets:
-  #   GSC_KEY_JSON       — gsc-mcp@theasset-gsc 서비스 계정 키 JSON 전체
-  #   RESEND_API_KEY     — (선택) 메일 발송용. 없으면 GMAIL_APP_PASS+GMAIL_USER 사용
-  #   GMAIL_USER         — (선택) theassetsquare@gmail.com
-  #   GMAIL_APP_PASS     — (선택) Gmail App Password (16자)
+# 24시간 자동화: 매일 정기 점검 + push 시점 점검.
+#   1) seo_audit.py    — 키워드 스터핑/중복 title·desc/깨진 자산/JSON-LD/사이트맵
+#   2) cannibal_check  — 카니발리제이션/중복 H1·canonical
+#   3) bug_check       — 인라인핸들러/접근성/HTTP mixed-content/깨진 링크
+#   4) live_check.py   — 배포 53페이지 HTTP 200·고유 title·신규 CSS·og·스터핑
+#   5) gsc_monitor     — 28일 GSC 쿼리/페이지/카니발/낮은 CTR/노출 0 페이지
+#   6) notify          — 이슈 발견 시 theassetsquare@gmail.com 메일 발송
+#   7) issue_inbox     — Gmail 에서 [더에셋스퀘어] 이슈 메일 자동 처리
+#
+# 필요한 Secrets:
+#   GSC_KEY_JSON       — gsc-mcp@theasset-gsc 서비스 계정 키 JSON 전체
+#   RESEND_API_KEY     — (선택) 메일 발송용. 없으면 GMAIL_APP_PASS+GMAIL_USER 사용
+#   GMAIL_USER         — (선택) theassetsquare@gmail.com
+#   GMAIL_APP_PASS     — (선택) Gmail App Password (16자)
 
-  on:
-    push:
-      branches: [main]
-    schedule:
-      - cron: "0 0 * * *"      # 매일 00:00 UTC (09:00 KST)
-      - cron: "0 12 * * *"     # 매일 12:00 UTC (21:00 KST) — 하루 2회
-    workflow_dispatch: {}
+on:
+  push:
+    branches: [main]
+  schedule:
+    - cron: "0 0 * * *"      # 매일 00:00 UTC (09:00 KST)
+    - cron: "0 12 * * *"     # 매일 12:00 UTC (21:00 KST) — 하루 2회
+  workflow_dispatch: {}
 
-  permissions:
-    contents: read
+permissions:
+  contents: read
 
-  jobs:
-    pipeline:
-      runs-on: ubuntu-latest
-      steps:
-        - uses: actions/checkout@v4
-        - uses: actions/setup-python@v5
-          with:
-            python-version: "3.12"
+jobs:
+  pipeline:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
 
-        - name: Restore GSC service account key
-          if: ${{ env.GSC_KEY_JSON != '' }}
-          env:
-            GSC_KEY_JSON: ${{ secrets.GSC_KEY_JSON }}
-          run: |
-            mkdir -p ~/.gsc
-            printf '%s' "$GSC_KEY_JSON" > ~/.gsc/theasset-gsc.json
-            chmod 600 ~/.gsc/theasset-gsc.json
+      - name: Restore GSC service account key
+        if: ${{ env.GSC_KEY_JSON != '' }}
+        env:
+          GSC_KEY_JSON: ${{ secrets.GSC_KEY_JSON }}
+        run: |
+          mkdir -p ~/.gsc
+          printf '%s' "$GSC_KEY_JSON" > ~/.gsc/theasset-gsc.json
+          chmod 600 ~/.gsc/theasset-gsc.json
 
-        - name: Run audit pipeline
-          env:
-            GSC_KEY: /home/runner/.gsc/theasset-gsc.json
-            GSC_TODAY: ""
-          run: |
-            python3 tools/auto_pipeline.py || true
-            ls -la tools/audit_reports/ | tail -20
+      - name: Run audit pipeline
+        env:
+          GSC_KEY: /home/runner/.gsc/theasset-gsc.json
+          GSC_TODAY: ""   # leave empty → script uses 2026-06-01 default; override per-run if needed
+        run: |
+          python3 tools/auto_pipeline.py || true
+          ls -la tools/audit_reports/ | tail -20
 
-        - name: Upload report artifacts
-          if: ${{ always() }}
-          uses: actions/upload-artifact@v4
-          with:
-            name: audit-reports
-            path: tools/audit_reports/
-            retention-days: 30
+      - name: Upload report artifacts
+        if: ${{ always() }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: audit-reports
+          path: tools/audit_reports/
+          retention-days: 30
 
-        - name: Notify on issue
-          if: ${{ always() }}
-          env:
-            RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
-            RESEND_FROM: ${{ secrets.RESEND_FROM }}
-            GMAIL_USER: ${{ secrets.GMAIL_USER }}
-            GMAIL_APP_PASS: ${{ secrets.GMAIL_APP_PASS }}
-          run: python3 tools/notify.py || true
+      - name: Notify on issue
+        if: ${{ always() }}
+        env:
+          RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
+          RESEND_FROM: ${{ secrets.RESEND_FROM }}
+          GMAIL_USER: ${{ secrets.GMAIL_USER }}
+          GMAIL_APP_PASS: ${{ secrets.GMAIL_APP_PASS }}
+        run: python3 tools/notify.py || true
 
-        - name: Auto-handle issue inbox
-          if: ${{ always() }}
-          env:
-            GMAIL_USER: ${{ secrets.GMAIL_USER }}
-            GMAIL_APP_PASS: ${{ secrets.GMAIL_APP_PASS }}
-          run: python3 tools/issue_inbox.py || true
+      - name: Auto-handle issue inbox
+        if: ${{ always() }}
+        env:
+          GMAIL_USER: ${{ secrets.GMAIL_USER }}
+          GMAIL_APP_PASS: ${{ secrets.GMAIL_APP_PASS }}
+        run: python3 tools/issue_inbox.py || true

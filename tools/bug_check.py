@@ -21,7 +21,7 @@ from collections import defaultdict
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 REPORT_DIR = os.path.join(ROOT, "tools", "audit_reports")
 os.makedirs(REPORT_DIR, exist_ok=True)
-TODAY = dt.date.fromisoformat(os.environ.get("GSC_TODAY", "2026-06-01"))
+TODAY = dt.date.fromisoformat(os.environ.get("GSC_TODAY") or "2026-06-01")
 
 # canonical css version = newest mtime stamp embedded — use whatever index.html uses
 def canonical_css_ver():

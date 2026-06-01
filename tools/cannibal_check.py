@@ -19,7 +19,7 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 REPORT_DIR = os.path.join(ROOT, "tools", "audit_reports")
 os.makedirs(REPORT_DIR, exist_ok=True)
 
-TODAY = dt.date.fromisoformat(os.environ.get("GSC_TODAY", "2026-06-01"))
+TODAY = dt.date.fromisoformat(os.environ.get("GSC_TODAY") or "2026-06-01")
 
 TAG_RE = re.compile(r"<[^>]+>")
 

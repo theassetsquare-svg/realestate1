@@ -14,7 +14,7 @@ from email.mime.text import MIMEText
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 TO = "theassetsquare@gmail.com"
-TODAY = dt.date.fromisoformat(os.environ.get("GSC_TODAY", "2026-06-01"))
+TODAY = dt.date.fromisoformat(os.environ.get("GSC_TODAY") or "2026-06-01")
 
 
 def latest_status():

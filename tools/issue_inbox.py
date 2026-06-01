@@ -26,7 +26,7 @@ from __future__ import annotations
 import email, imaplib, os, re, sys, glob, datetime as dt
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-TODAY = dt.date.fromisoformat(os.environ.get("GSC_TODAY", "2026-06-01"))
+TODAY = dt.date.fromisoformat(os.environ.get("GSC_TODAY") or "2026-06-01")
 
 KEYWORDS = ["더에셋스퀘어", "site issue", "GSC", "Search Console", "더에셋"]
 

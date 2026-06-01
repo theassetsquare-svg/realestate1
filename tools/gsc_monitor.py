@@ -23,7 +23,7 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from gsc_client import GSC  # noqa: E402
 
 SITE_HOST = "https://realestate1-3xh.pages.dev"
-TODAY = dt.date.fromisoformat(os.environ.get("GSC_TODAY", "2026-06-01"))
+TODAY = dt.date.fromisoformat(os.environ.get("GSC_TODAY") or "2026-06-01")
 START = (TODAY - dt.timedelta(days=28)).isoformat()
 END = TODAY.isoformat()
 REPORT_DIR = os.path.join(ROOT, "tools", "audit_reports")

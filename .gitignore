@@ -2,3 +2,14 @@
 .env
 .env.*
 .env.local
+
+# Google Search Console service account keys — NEVER commit
+*gsc*.json
+*service-account*.json
+theasset-gsc.json
+.gsc/
+
+# Tool data / reports
+tools/gsc_data/
+tools/audit_reports/
+tools/__pycache__/

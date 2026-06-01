@@ -1,0 +1,580 @@
+[
+  {
+    "slug": "mokdong-yunseul-xi",
+    "name_ko": "목동 윤슬자이",
+    "category": "officetel",
+    "region": "서울 양천구 목동",
+    "developer": "GS건설",
+    "total_units": "651실",
+    "size_range": "전용 114~204㎡",
+    "price_range": "미정 (하이엔드 오피스텔)",
+    "schedule": "2026년 6월 분양 / 2030년 하반기 입주",
+    "highlights": [
+      "옛 KT부지 지하 6층~지상 48층 3개동 복합주거",
+      "5호선 오목교역 인근 — 여의도·강남 접근성",
+      "목동 학원가·서정초·목운중·양정고·진명여고 학군",
+      "GS건설 하이퍼트 모델 적용된 하이엔드 오피스텔"
+    ]
+  },
+  {
+    "slug": "songpa-wirye-apiche",
+    "name_ko": "송파위례 아피체",
+    "category": "officetel",
+    "region": "서울 송파구 위례신도시",
+    "developer": "위례 시행조합",
+    "total_units": "총 117실",
+    "size_range": "전용 44·57·59㎡",
+    "price_range": "미정",
+    "schedule": "2026년 6월 분양",
+    "highlights": [
+      "위례신도시 송파권역 주거형 오피스텔",
+      "5호선 거여역 역세권",
+      "3-Bay·2-Room 혁신 평면",
+      "강남 출퇴근 직장인·신혼부부 수요"
+    ]
+  },
+  {
+    "slug": "gyeonggwangju-raon-dreamcity",
+    "name_ko": "경기광주역 라온프라이빗 드림시티",
+    "category": "officetel",
+    "region": "경기 광주시 역동",
+    "developer": "라온건설",
+    "total_units": "총 1,902세대 민간임대",
+    "size_range": "전용 59·74·84·100㎡",
+    "price_range": "민간임대 — 임대보증금/월세",
+    "schedule": "회원 모집 중 (2026년)",
+    "highlights": [
+      "경강선 경기광주역 역세권 대단지 민간임대",
+      "지하 2층~지상 35층 12개동",
+      "장기 안정 거주 가능한 민간임대",
+      "서울 동남권·판교 접근성"
+    ]
+  },
+  {
+    "slug": "wolgye-jungheung-sclass",
+    "name_ko": "월계 중흥S클래스",
+    "category": "apartment",
+    "region": "서울 노원구 월계동",
+    "developer": "중흥건설",
+    "total_units": "총 355세대",
+    "size_range": "전용 59~84㎡",
+    "price_range": "미정",
+    "schedule": "2026년 5~6월 분양",
+    "highlights": [
+      "1·6호선 석계역 초역세권 도보 5분",
+      "일반분양 36평형 23세대·59A 68세대·59B 42세대",
+      "월계동 일대 정비사업 중심지",
+      "동북선 경전철 호재 권역"
+    ]
+  },
+  {
+    "slug": "shinbanpo-22",
+    "name_ko": "신반포 22차 재건축",
+    "category": "apartment",
+    "region": "서울 서초구 잠원동",
+    "developer": "현대엔지니어링",
+    "total_units": "총 160세대 / 일반분양 28세대",
+    "size_range": "전용 59~135㎡",
+    "price_range": "평당 약 8,500만원 검토",
+    "schedule": "2026년 6월 분양 예정",
+    "highlights": [
+      "3호선 잠원역 역세권",
+      "최고 35층 2개동 한강변 인접",
+      "일반분양 28세대 — 희소성",
+      "현대엔지니어링 하이엔드 검토"
+    ]
+  },
+  {
+    "slug": "dpine-artia",
+    "name_ko": "드파인 아르티아",
+    "category": "apartment",
+    "region": "서울 동작구 노량진동",
+    "developer": "SK에코플랜트",
+    "total_units": "총 404세대 / 일반분양 171세대",
+    "size_range": "전용 59~109㎡",
+    "price_range": "미정",
+    "schedule": "2026년 6월 분양",
+    "highlights": [
+      "지하 4층~지상 45층 2개동 초고층",
+      "7호선 장승배기역 단지 앞",
+      "1·9호선 노량진역 도보권",
+      "SK에코플랜트 하이엔드 '드파인'"
+    ]
+  },
+  {
+    "slug": "changneung-s02",
+    "name_ko": "고양창릉 S-02 공공분양",
+    "category": "apartment",
+    "region": "경기 고양시 덕양구 창릉동",
+    "developer": "LH·라인건설",
+    "total_units": "1,057세대 (이익공유형 공공분양)",
+    "size_range": "전용 59~84㎡",
+    "price_range": "국평 약 6억원대 전망",
+    "schedule": "2026년 상반기 본청약",
+    "highlights": [
+      "3기 신도시 고양창릉 첫 본청약",
+      "GTX-A 창릉역 신설 예정",
+      "은평·마포 인접",
+      "2025년 9월 라인건설 착공"
+    ]
+  },
+  {
+    "slug": "pyeongtaek-godeok-woomilin-prestige",
+    "name_ko": "평택 고덕 우미린 프레스티지",
+    "category": "apartment",
+    "region": "경기 평택시 고덕동",
+    "developer": "우미건설 컨소시엄",
+    "total_units": "총 743세대",
+    "size_range": "전용 84·94·101·111㎡",
+    "price_range": "분양가상한제 적용",
+    "schedule": "2026년 5~6월 분양",
+    "highlights": [
+      "고덕국제신도시 중대형 평형",
+      "삼성전자 평택캠퍼스 직주근접",
+      "행정타운 더블 생활권",
+      "지하 2층~지상 20층 11개동"
+    ]
+  },
+  {
+    "slug": "munhyun-central-fore",
+    "name_ko": "센트럴포레 문현",
+    "category": "apartment",
+    "region": "부산 남구 문현동",
+    "developer": "포스코이앤씨",
+    "total_units": "총 791세대",
+    "size_range": "전용 59·75·84㎡",
+    "price_range": "미정",
+    "schedule": "2026년 6월 분양 예정",
+    "highlights": [
+      "지하 4층~지상 35층 8개동",
+      "59㎡ 354·75㎡ 199·84㎡ 238세대",
+      "부산 남구 문현금융단지·BIFC 인접",
+      "포스코이앤씨 책임준공"
+    ]
+  },
+  {
+    "slug": "asan-tangjeong-xi-metrocity",
+    "name_ko": "아산탕정자이 메트로시티",
+    "category": "apartment",
+    "region": "충남 아산시 탕정면",
+    "developer": "GS건설·LH",
+    "total_units": "총 1,638세대",
+    "size_range": "전용 59~84㎡",
+    "price_range": "미정",
+    "schedule": "2026년 상반기 분양",
+    "highlights": [
+      "아산센트럴시티 A3블록",
+      "아산신도시 단일 단지 최대 규모",
+      "삼성디스플레이 탕정캠퍼스 배후",
+      "1호선·KTX 천안아산역 접근성"
+    ]
+  },
+  {
+    "slug": "incheon-songdo-rc2",
+    "name_ko": "인천 송도11공구 RC2BL",
+    "category": "apartment",
+    "region": "인천 연수구 송도동",
+    "developer": "송도국제도시 시행",
+    "total_units": "미정",
+    "size_range": "미정",
+    "price_range": "미정",
+    "schedule": "2026년 6월 분양 예정",
+    "highlights": [
+      "송도국제도시 11공구 워터프런트",
+      "바이오 클러스터·연세대 국제캠퍼스",
+      "인천1호선 연장·GTX-B 호재",
+      "송도 국제학교·학원가"
+    ]
+  },
+  {
+    "slug": "geomam-station-b1",
+    "name_ko": "검암역세권 B-1BL",
+    "category": "apartment",
+    "region": "인천 서구 검암동",
+    "developer": "공공·민간 컨소시엄",
+    "total_units": "미정",
+    "size_range": "미정",
+    "price_range": "미정",
+    "schedule": "2026년 6월 분양 예정",
+    "highlights": [
+      "공항철도·서울지하철 검암역 초역세권",
+      "청라국제도시·검단신도시 인접",
+      "검암역세권 공공주택지구 핵심",
+      "광역철도 결절 호재"
+    ]
+  },
+  {
+    "slug": "cityociel-9",
+    "name_ko": "시티오씨엘 9단지",
+    "category": "apartment",
+    "region": "인천 미추홀구 학익동",
+    "developer": "DK도시개발",
+    "total_units": "미정",
+    "size_range": "미정",
+    "price_range": "미정",
+    "schedule": "2026년 6월 분양 예정",
+    "highlights": [
+      "용현·학익 도시개발지구 후속",
+      "인천1호선 학익역(예정)·수인분당선 인근",
+      "문학경기장·롯데마트 인프라",
+      "SK인천석유화학 이전 부지 환경 개선"
+    ]
+  },
+  {
+    "slug": "shingwanggyo-cloud-city",
+    "name_ko": "신광교 클라우드 시티",
+    "category": "knowledge-center",
+    "region": "경기 용인시 기흥구 영덕동",
+    "developer": "현대엔지니어링",
+    "total_units": "연면적 약 35만㎡ (5개동)",
+    "size_range": "전용 30~200㎡대",
+    "price_range": "3.3㎡당 800만~1,200만원대 추정",
+    "schedule": "분양 중 (2026년)",
+    "highlights": [
+      "용인 반도체 메가클러스터 배후",
+      "지하 6층~지상 33층 5개동 — 잠실주경기장 3배",
+      "하이엔드 워크에디션 컨셉",
+      "삼성전자삼거리 인근 자족시설용지"
+    ]
+  },
+  {
+    "slug": "gh-biz-gyeonggi-gwangju",
+    "name_ko": "GH 비즈 경기광주역",
+    "category": "knowledge-center",
+    "region": "경기 광주시 역동 417-2",
+    "developer": "경기주택도시공사(GH)",
+    "total_units": "분양 94호실 / 임대 201호실",
+    "size_range": "호실별",
+    "price_range": "3.3㎡당 600만~900만원대",
+    "schedule": "2026년 5월 29일 분양 개시 / 10월 입주",
+    "highlights": [
+      "경기 광주시 최초 공공 지산 단지",
+      "경강선 경기광주역 도보권",
+      "근생·오피스텔 4개동 복합 자족 단지",
+      "판교 대비 최대 40% 저렴"
+    ]
+  },
+  {
+    "slug": "seoul-forest-thespace",
+    "name_ko": "서울숲 더스페이스",
+    "category": "knowledge-center",
+    "region": "서울 성동구 성수동1가",
+    "developer": "현대 아산",
+    "total_units": "연면적 25,623㎡",
+    "size_range": "전용 30~116㎡",
+    "price_range": "미정",
+    "schedule": "분양 진행 중",
+    "highlights": [
+      "2호선 뚝섬역·수인분당선 서울숲역 더블 역세권",
+      "성수동 IT·문화 클러스터",
+      "강남·강변북로 접근성",
+      "법정 대비 주차대수 128대 여유"
+    ]
+  },
+  {
+    "slug": "hyundai-teratower-gamil",
+    "name_ko": "현대 테라타워 감일",
+    "category": "knowledge-center",
+    "region": "경기 하남시 감일지구",
+    "developer": "현대엔지니어링",
+    "total_units": "연면적 57,000㎡",
+    "size_range": "전용 다양",
+    "price_range": "3.3㎡당 429만~952만원",
+    "schedule": "분양 진행",
+    "highlights": [
+      "감일지구 첫 지식산업센터",
+      "송파·강동·위례 생활권",
+      "취득세 50%·재산세 37.5% 감면",
+      "5호선 마천역·서하남IC 접근성"
+    ]
+  },
+  {
+    "slug": "guro-artisforum",
+    "name_ko": "구로 아티스포럼",
+    "category": "knowledge-center",
+    "region": "서울 구로구 구로동",
+    "developer": "민간 시행",
+    "total_units": "지하 3층~지상 20층",
+    "size_range": "전용 다양",
+    "price_range": "미정",
+    "schedule": "분양 진행",
+    "highlights": [
+      "G밸리(서울디지털산업단지) 핵심",
+      "7호선 남구로역 도보 5분",
+      "2호선 구로디지털단지역·대림역 인접",
+      "구로 1단지 역세권 8년 만의 신규"
+    ]
+  },
+  {
+    "slug": "paju-unjeong3-house-land",
+    "name_ko": "파주 운정3 단독주택용지",
+    "category": "land",
+    "region": "경기 파주시 동패동·목동동",
+    "developer": "LH",
+    "total_units": "단독·점포겸용 다수 필지",
+    "size_range": "필지별 200~330㎡",
+    "price_range": "공급가 — 입찰",
+    "schedule": "2026년 — 유보지 용도전환 후 공급",
+    "highlights": [
+      "GTX-A 운정중앙역 — 서울역 20분대",
+      "운정3지구 마지막 단독·상가용지",
+      "3기 신도시 권역 중장기 가치",
+      "점포겸용 1층 상업·2~3층 주거"
+    ]
+  },
+  {
+    "slug": "suwon-dangsu-house-land",
+    "name_ko": "수원 당수 단독주택용지",
+    "category": "land",
+    "region": "경기 수원시 권선구 당수동",
+    "developer": "LH",
+    "total_units": "약 490호 규모",
+    "size_range": "필지별 단독주택용지",
+    "price_range": "공급가 — 입찰",
+    "schedule": "2026년 유보지 용도전환 후 공급",
+    "highlights": [
+      "당수2지구 신규 택지",
+      "신분당선 호매실 연장 호재",
+      "당수1지구 입주민 인프라 공유",
+      "단독주택용지 희소"
+    ]
+  },
+  {
+    "slug": "uijeongbu-gosan-shop-house",
+    "name_ko": "의정부 고산 점포겸용 단독주택용지",
+    "category": "land",
+    "region": "경기 의정부시 고산동",
+    "developer": "LH",
+    "total_units": "근린·점포겸용 다수 필지",
+    "size_range": "필지별 230~330㎡",
+    "price_range": "5년 무이자 공급 조건",
+    "schedule": "2026년 5월 29일 공급공고",
+    "highlights": [
+      "GTX-C 의정부역 호재 권역",
+      "의정부 법조타운·민락2지구 인접",
+      "근린생활시설·점포겸용 동시 공급",
+      "1층 임대수익 + 2~3층 주거"
+    ]
+  },
+  {
+    "slug": "uijeongbu-mirak2-shop-house",
+    "name_ko": "의정부 민락2 점포겸용 단독주택용지",
+    "category": "land",
+    "region": "경기 의정부시 민락동",
+    "developer": "LH",
+    "total_units": "점포겸용 다수 필지",
+    "size_range": "필지별 230~300㎡",
+    "price_range": "5년 무이자 공급 조건",
+    "schedule": "2026년 5월 29일 공급공고",
+    "highlights": [
+      "민락2지구 수도권 동북부 거점",
+      "의정부경전철·7호선 연장 호재",
+      "임대수익형 자산",
+      "근린생활시설 동시 공급으로 상권 형성"
+    ]
+  },
+  {
+    "slug": "yangju-hoecheon-house-land",
+    "name_ko": "양주 회천 단독주택용지",
+    "category": "land",
+    "region": "경기 양주시 회정동",
+    "developer": "LH",
+    "total_units": "필지별 공급",
+    "size_range": "단독 230~300㎡",
+    "price_range": "공급가 — 입찰",
+    "schedule": "2026년 LH 수도권 공급계획",
+    "highlights": [
+      "회천지구 양주신도시 핵심",
+      "1호선 덕정역·GTX-C 연장 권역",
+      "공공분양 단지(A24·A8) 입주민 배후",
+      "서울 동북부·의정부 생활권"
+    ]
+  },
+  {
+    "slug": "saemangeum-support-1",
+    "name_ko": "새만금 1공구 지원시설용지",
+    "category": "industrial",
+    "region": "전북 군산시 새만금산업단지",
+    "developer": "새만금개발청",
+    "total_units": "지원시설용지 다수 필지",
+    "size_range": "필지별 산업·업무·상업 지원",
+    "price_range": "공급가 — 경쟁입찰 전환",
+    "schedule": "2026년 신규 분양 공고",
+    "highlights": [
+      "2차전지 특화단지 — LG화학·SK온·성일하이텍 투자",
+      "17필지 확정측량 반영 개발계획 변경",
+      "수의계약 → 경쟁입찰 전환",
+      "군산·김제 직주근접 배후"
+    ]
+  },
+  {
+    "slug": "yongin-techno-valley-2",
+    "name_ko": "제2용인테크노밸리 일반산업단지",
+    "category": "industrial",
+    "region": "경기 용인시 처인구 덕성리",
+    "developer": "용인특례시·공영개발",
+    "total_units": "46개 필지 271,719㎡",
+    "size_range": "필지별 1,000~10,000㎡",
+    "price_range": "분양 완료(100%)",
+    "schedule": "2026년 하반기 준공",
+    "highlights": [
+      "분양 100% 완료",
+      "용인 반도체 클러스터 'L자 벨트' 거점",
+      "공정률 30% — 2026년 하반기 준공 전망",
+      "SK하이닉스·삼성전자 협력사 입주"
+    ]
+  },
+  {
+    "slug": "pyeongtaek-brain-city-industrial",
+    "name_ko": "평택 브레인시티 일반산업단지",
+    "category": "industrial",
+    "region": "경기 평택시 도일동·장안동",
+    "developer": "평택 브레인시티개발",
+    "total_units": "총면적 4,825,152㎡",
+    "size_range": "산업·연구·상업 복합 필지",
+    "price_range": "용지별 상이",
+    "schedule": "2026년 KAIST 평택캠퍼스 1단계 개교 / 분양 진행",
+    "highlights": [
+      "145만평 민관합동 자족형 신도시",
+      "2026년 KAIST 평택캠퍼스 1단계 개교",
+      "아주대 평택병원 500병상(2030)",
+      "대광로제비앙·푸르지오 등 주거 동반"
+    ]
+  },
+  {
+    "slug": "jeungpyeong-3-industrial",
+    "name_ko": "증평3 일반산업단지",
+    "category": "industrial",
+    "region": "충북 증평군",
+    "developer": "증평군·공영개발",
+    "total_units": "총면적 772,134㎡",
+    "size_range": "중·소형 공장용지",
+    "price_range": "공급가 — 토지보상 후",
+    "schedule": "2026년 공사 착수 / 2028년 준공",
+    "highlights": [
+      "총사업비 1,675억원 투입",
+      "중부고속도로·증평IC 접근성",
+      "청주공항·청주산단 인접 중부권 물류",
+      "총면적 77만㎡"
+    ]
+  },
+  {
+    "slug": "pyeongtaek-port-bix-2",
+    "name_ko": "평택항 BIX 일반산업단지 후속",
+    "category": "industrial",
+    "region": "경기 평택시 포승읍",
+    "developer": "평택도시공사·민간",
+    "total_units": "추가 공급 필지",
+    "size_range": "공장·물류 필지",
+    "price_range": "용지별 상이",
+    "schedule": "2026년 후속 공급",
+    "highlights": [
+      "평택항 거점 황해경제자유구역",
+      "수출입·물류 최적 입지",
+      "평택항 컨테이너 부두 인접",
+      "조립금속·자동차부품 클러스터"
+    ]
+  },
+  {
+    "slug": "changneung-s02-store",
+    "name_ko": "고양창릉 S-02 단지내상가",
+    "category": "store",
+    "region": "경기 고양시 덕양구 창릉동",
+    "developer": "LH·라인건설",
+    "total_units": "단지내상가 다수 호실",
+    "size_range": "호실별 20~50㎡",
+    "price_range": "공급가 — 입찰",
+    "schedule": "2026년 상반기 공급",
+    "highlights": [
+      "3기 신도시 고양창릉 첫 분양 단지내상가",
+      "S-02·S-03·S-04 3,387세대 배후",
+      "GTX-A 창릉역 신설 예정",
+      "BRT·도시철도 환승 거점"
+    ]
+  },
+  {
+    "slug": "mokdong-yunseul-store",
+    "name_ko": "목동 윤슬자이 단지내상가",
+    "category": "store",
+    "region": "서울 양천구 목동",
+    "developer": "GS건설",
+    "total_units": "단지 내 근린생활시설",
+    "size_range": "호실별",
+    "price_range": "미정",
+    "schedule": "2026년 6월 분양",
+    "highlights": [
+      "옛 KT부지 복합단지 내 상업시설",
+      "5호선 오목교역 도보권 유동인구",
+      "목동 학원가·아파트 배후 수요",
+      "하이엔드 단지 임대료 프리미엄"
+    ]
+  },
+  {
+    "slug": "jangwi-markone-store",
+    "name_ko": "장위 푸르지오 마크원 단지내상가",
+    "category": "store",
+    "region": "서울 성북구 장위동",
+    "developer": "대우건설",
+    "total_units": "단지내상가 다수 호실",
+    "size_range": "호실별 20~60㎡",
+    "price_range": "미정",
+    "schedule": "2026년 6월 분양",
+    "highlights": [
+      "1,931세대 대단지 배후 수요",
+      "6호선 들곶이역 도보권",
+      "장위10구역 학군 인접 동선",
+      "GTX-C·동북선 호재"
+    ]
+  },
+  {
+    "slug": "hoecheon-a24-store",
+    "name_ko": "양주 회천 A24 단지내상가",
+    "category": "store",
+    "region": "경기 양주시 회정동",
+    "developer": "LH·신영건설",
+    "total_units": "단지내상가",
+    "size_range": "호실별",
+    "price_range": "공급가",
+    "schedule": "2026년 공급",
+    "highlights": [
+      "회천지구 869가구 공공분양 배후",
+      "1호선 덕정역 인근",
+      "양주신도시 중심상권",
+      "59㎡ 분양가 2.9억대"
+    ]
+  },
+  {
+    "slug": "yeokgok-a2-store",
+    "name_ko": "부천 역곡 A2 단지내상가",
+    "category": "store",
+    "region": "경기 부천시 역곡동",
+    "developer": "LH",
+    "total_units": "단지내상가 (신혼희망타운)",
+    "size_range": "호실별",
+    "price_range": "공급가",
+    "schedule": "2026년 공급",
+    "highlights": [
+      "역곡 신혼희망타운 1,464가구 배후",
+      "1호선 역곡역 인근",
+      "부천대장·홍대선 호재",
+      "공공임대 488 + 공공분양 976가구"
+    ]
+  },
+  {
+    "slug": "pyeongtaek-godeok-woomilin-store",
+    "name_ko": "평택 고덕 우미린 프레스티지 단지내상가",
+    "category": "store",
+    "region": "경기 평택시 고덕동",
+    "developer": "우미건설 컨소시엄",
+    "total_units": "단지내상가",
+    "size_range": "호실별",
+    "price_range": "미정",
+    "schedule": "2026년 5~6월 분양",
+    "highlights": [
+      "고덕국제신도시 743세대 배후",
+      "삼성전자 평택캠퍼스 임직원 수요",
+      "행정타운 더블 생활권",
+      "SRT·KTX 평택지제역 인근"
+    ]
+  }
+]

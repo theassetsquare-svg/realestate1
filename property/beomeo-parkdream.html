@@ -73,10 +73,10 @@
     <div class="sim-row"><label>대출비율(%)</label><input type="number" id="sim-ltv" value="50" min="0" max="80"></div>
     <div class="sim-row"><label>금리(%)</label><input type="number" id="sim-rate" value="3.5" min="0" max="10" step="0.1"></div>
     <div class="sim-row"><label>상환기간(년)</label><input type="number" id="sim-year" value="30" min="1" max="40"></div>
-    <button id="sim-btn" onclick="calcSim()">계산하기</button>
+    <button id="sim-btn" type="button">계산하기</button>
     <div class="sim-result" id="sim-result"></div>
     <script>
-    function calcSim(){var p=document.getElementById('sim-price').value*10000;var l=document.getElementById('sim-ltv').value/100;var r=document.getElementById('sim-rate').value/100/12;var n=document.getElementById('sim-year').value*12;var loan=p*l;var m=loan*r*Math.pow(1+r,n)/(Math.pow(1+r,n)-1);document.getElementById('sim-result').innerHTML='<strong>월 납입금: 약 '+Math.round(m/10000)+'만원</strong><br>대출금: '+Math.round(loan/10000).toLocaleString()+'만원';}
+    function calcSim(){var p=document.getElementById('sim-price').value*10000;var l=document.getElementById('sim-ltv').value/100;var r=document.getElementById('sim-rate').value/100/12;var n=document.getElementById('sim-year').value*12;var loan=p*l;var m=loan*r*Math.pow(1+r,n)/(Math.pow(1+r,n)-1);document.getElementById('sim-result').innerHTML='<strong>월 납입금: 약 '+Math.round(m/10000)+'만원</strong><br>대출금: '+Math.round(loan/10000).toLocaleString()+'만원';}document.addEventListener('DOMContentLoaded',function(){var b=document.getElementById('sim-btn');if(b)b.addEventListener('click',calcSim);});
     </script>
   </div>
 

@@ -1,0 +1,61 @@
+# ─────────────────────────────────────────────────────────────────────────────
+# 매일 자동 생성·갱신 워크플로 (설치 1회 필요)
+#
+# ⚠ 이 파일은 tools/workflow_drop/ 에 보관된 "드롭"입니다.
+#   CLI 의 git 토큰에는 `workflow` 스코프가 없어 .github/workflows/* 를 직접
+#   푸시할 수 없습니다(과거 이력 동일). 사장님이 1회만 아래처럼 설치하세요:
+#
+#     cp tools/workflow_drop/daily-update.yml .github/workflows/daily-update.yml
+#     git add .github/workflows/daily-update.yml && git commit -m "ci: daily auto-update" && git push
+#
+#   (또는 GitHub 웹 UI → Add file → 이 내용 붙여넣기)
+#
+# 필요 Secrets (선택):
+#   DATA_GO_KR_KEY  — data.go.kr 청약홈 분양정보 키. 있으면 매일 실데이터 fetch,
+#                     없으면 날짜 기반 자동 종료만 동작(창작 없음).
+#   INDEXNOW_KEY    — IndexNow 핑용(Bing/Yandex). 없으면 사이트맵만 갱신.
+# ─────────────────────────────────────────────────────────────────────────────
+name: Daily Auto-Generate & Refresh
+
+on:
+  schedule:
+    - cron: "0 21 * * *"     # 매일 21:00 UTC = 06:00 KST
+  workflow_dispatch: {}
+
+permissions:
+  contents: write            # 변경된 페이지를 커밋/푸시하려면 write 필요
+
+concurrency:
+  group: daily-update
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Run daily pipeline (fetch → SSOT → render → gate)
+        env:
+          DATA_GO_KR_KEY: ${{ secrets.DATA_GO_KR_KEY }}
+          INDEXNOW_KEY: ${{ secrets.INDEXNOW_KEY }}
+          GSC_TODAY: ""        # 빈 값이면 daily_update.py 가 실제 오늘 날짜 사용
+        run: |
+          python3 tools/daily_update.py
+          # daily_update.py 는 게이트 실패 시 비0 종료 → 아래 커밋 단계가 실행되지 않음
+
+      - name: Commit & push if changed
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          if [ -n "$(git status --porcelain)" ]; then
+            git add property/*.html *.html sitemap.xml tools/data/listings.json
+            git commit -m "chore(auto): 일일 분양 현장 생성·갱신 + 만료 자동 종료 [skip ci]"
+            git push
+            echo "→ pushed; Cloudflare Pages will auto-deploy"
+          else
+            echo "→ no changes today"
+          fi

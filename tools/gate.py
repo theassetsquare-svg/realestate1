@@ -73,6 +73,10 @@ def check_html(path, h, is_detail, status=None):
     # false realtime claim (contiguous, or split across the home stat tiles)
     if re.search(r"실시간[^가-힣]{0,40}청약홈\s*연동|실시간\s*청약홈", h):
         v.append(("G-REALTIME", "실시간 청약홈 연동"))
+    # responsive: wide comp-table must sit in an overflow-x scroll container
+    for m in re.finditer(r'<table class="comp-table">', h):
+        if "overflow-x:auto" not in h[max(0, m.start() - 140):m.start()]:
+            v.append(("G-OVERFLOW", "comp-table not in overflow-x:auto wrapper")); break
     return v
 
 
@@ -176,6 +180,7 @@ def selftest():
         "G-HYPE": lambda s: s.replace("</h1>", "</h1><p>역대급 단지</p>", 1),
         "G-FREE": lambda s: s.replace("</h1>", "</h1><p>무료 분양 상담</p>", 1),
         "G-REALTIME": lambda s: s.replace("</h1>", "</h1><p>실시간 청약홈 연동</p>", 1),
+        "G-OVERFLOW": lambda s: s.replace("</h1>", '</h1><table class="comp-table"><tr><td>x</td></tr></table>', 1),
     }
     ok = True
     try:

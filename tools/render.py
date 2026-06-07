@@ -29,7 +29,7 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SITE = "https://realestate1-3xh.pages.dev"
 MAIN = "https://theassetsquare.com/"
 SSOT = os.path.join(ROOT, "tools", "data", "listings.json")
-CSS_VER = "2026060801"   # bumped so the status/entity edits invalidate cache
+CSS_VER = "2026060802"   # bumped so the status/entity/overflow edits invalidate cache
 
 CAT = {
     "apartment":        {"label": "아파트분양",       "page": "/apartment",        "kw": "아파트분양",   "icon": "🏢", "type": "Apartment"},
@@ -379,6 +379,18 @@ def clean_urls(h: str) -> str:
     return h
 
 
+def wrap_comp_tables(h: str) -> str:
+    """Ensure every wide comparison table sits in a horizontal-scroll container
+    so it never overflows the viewport on mobile (≤390px). Idempotent: tables
+    already preceded by overflow-x:auto are left untouched."""
+    def repl(m):
+        pre = h[max(0, m.start() - 140):m.start()]
+        if "overflow-x:auto" in pre:
+            return m.group(0)
+        return '<div style="overflow-x:auto">' + m.group(0) + "</div>"
+    return re.sub(r'<table class="comp-table">.*?</table>', repl, h, flags=re.S)
+
+
 def _replace_jsonld(h: str, jsonld: str) -> str:
     pat = re.compile(r'<script type="application/ld\+json">.*?</script>', re.S)
     repl = f'<script type="application/ld+json">{jsonld}</script>'
@@ -396,6 +408,8 @@ def fix_existing(slug, rec, today_iso, records=None):
 
     # R2 clean URLs + cache bust
     h = clean_urls(h)
+    # responsive: wrap wide comparison tables in a scroll container
+    h = wrap_comp_tables(h)
     # R1 entity: swap in clean @graph (name only + correct type + BreadcrumbList)
     h = _replace_jsonld(h, clean_jsonld(slug, rec))
     # R4 funnel: header logo should not open self in a new tab

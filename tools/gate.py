@@ -76,6 +76,54 @@ def check_html(path, h, is_detail, status=None):
     return v
 
 
+STATIC = ["index.html", "apartment.html", "officetel.html", "store.html",
+          "land.html", "industrial.html", "knowledge-center.html"]
+
+
+def _all_pages():
+    return [p for p in [os.path.join(ROOT, f) for f in STATIC] if os.path.exists(p)] \
+        + sorted(glob.glob(os.path.join(PROP, "*.html")))
+
+
+def _norm_target(href):
+    if not href.startswith("/"):
+        return None
+    h = href.split("#")[0].split("?")[0]
+    if h == "/":
+        return "index.html"
+    h = h[1:]
+    if not h.endswith(".html") and os.path.exists(os.path.join(ROOT, h + ".html")):
+        h += ".html"
+    return h if os.path.exists(os.path.join(ROOT, h)) else None
+
+
+def scan_graph(pages_html=None):
+    """Site-level checks: orphan (inbound 0), content dead-end (detail→detail <3),
+    funnel (no theassetsquare.com 0-hop CTA). Returns {relpath: [(rule,detail)]}."""
+    from collections import defaultdict
+    if pages_html is None:
+        pages_html = {os.path.relpath(p, ROOT): open(p, encoding="utf-8").read()
+                      for p in _all_pages()}
+    inbound = defaultdict(set)
+    content_out = defaultdict(set)
+    for rel, h in pages_html.items():
+        for href in set(re.findall(r'href="([^"]+)"', h)):
+            t = _norm_target(href)
+            if t and t != rel:
+                inbound[t].add(rel)
+                if rel.startswith("property/") and t.startswith("property/"):
+                    content_out[rel].add(t)
+    v = defaultdict(list)
+    for rel, h in pages_html.items():
+        if rel != "index.html" and not inbound[rel]:
+            v[rel].append(("G-ORPHAN", "inbound 0"))
+        if rel.startswith("property/") and len(content_out[rel]) < 3:
+            v[rel].append(("G-DEADEND", f"content links {len(content_out[rel])}<3"))
+        if "https://theassetsquare.com" not in h:
+            v[rel].append(("G-FUNNEL", "no 본진 0-hop CTA"))
+    return dict(v)
+
+
 def scan():
     status = _ssot_status()
     pages = []
@@ -100,6 +148,9 @@ def main():
     if "--selftest" in sys.argv:
         return selftest()
     v = scan()
+    # merge site-level graph violations
+    for page, vs in scan_graph().items():
+        v.setdefault(page, []).extend(vs)
     n = sum(len(x) for x in v.values())
     if not v:
         print(f"✅ GATE PASS — {len(glob.glob(os.path.join(PROP,'*.html')))+7} pages, 0 violations")
@@ -137,6 +188,21 @@ def selftest():
             ok = ok and hit
     finally:
         open(sample, "w", encoding="utf-8").write(orig)   # restore
+    # graph-level rules (operate on an in-memory page set, no disk mutation)
+    base = {os.path.relpath(p, ROOT): open(p, encoding="utf-8").read() for p in _all_pages()}
+    rel_sample = os.path.relpath(sample, ROOT)
+    graph_cases = {
+        "G-DEADEND": lambda d: {**d, rel_sample: re.sub(r'\s*<!--related-->.*?</section>', "", d[rel_sample], flags=re.S)},
+        "G-FUNNEL": lambda d: {**d, rel_sample: d[rel_sample].replace("https://theassetsquare.com", "https://example.com")},
+        "G-ORPHAN": lambda d: {k: re.sub(rf'href="/property/{re.escape(rel_sample.split("/")[-1][:-5])}"', 'href="/"', val)
+                               for k, val in d.items()},
+    }
+    for rule, mut in graph_cases.items():
+        gv = scan_graph(mut(base))
+        flagged = [r for vs in gv.values() for r, _ in vs]
+        hit = rule in flagged
+        print(f"  inject {rule:14} → gate {'BLOCKS ✅' if hit else 'MISSED ❌'}")
+        ok = ok and hit
     restored = open(sample, encoding="utf-8").read() == orig
     print(f"  restore original → {'OK ✅' if restored else 'FAILED ❌'}")
     print("SELFTEST", "PASS ✅" if ok and restored else "FAIL ❌")

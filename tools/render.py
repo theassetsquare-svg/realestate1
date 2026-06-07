@@ -125,6 +125,60 @@ def sanitize(text: str) -> str:
     return text
 
 
+def _region_key(region: str) -> str:
+    """'서울 서초구 잠원동' → '서울 서초구' for same-area ranking."""
+    return " ".join((region or "").split()[:2])
+
+
+def related_listings(slug, rec, records, k=4):
+    """Pick k related venues: same region first, then same category. Never self."""
+    cat = rec.get("category")
+    mine = _region_key(rec.get("region", ""))
+    pool = [r for s, r in records.items() if s != slug and r.get("category") == cat]
+    pool.sort(key=lambda r: (0 if _region_key(r.get("region", "")) == mine and mine else 1, r["slug"]))
+    if len(pool) < k:  # top up with other categories so a detail is never a dead-end
+        extra = [r for s, r in records.items() if s != slug and r.get("category") != cat]
+        extra.sort(key=lambda r: (0 if _region_key(r.get("region", "")) == mine and mine else 1, r["slug"]))
+        pool = pool + extra
+    return pool[:k]
+
+
+def related_section(slug, rec, records):
+    """A '관련 분양 현장' block of content cross-links (raises dwell + inbound;
+    kills content dead-ends). Idempotent: callers strip the old block first."""
+    rel = related_listings(slug, rec, records)
+    if not rel:
+        return ""
+    cards = []
+    for r in rel:
+        info = CAT.get(r.get("category"), CAT["apartment"])
+        txt, cls = STATUS_BADGE.get(r.get("status"), (r.get("status", "분양 정보"), ""))
+        badge_cls = ("prop-badge " + cls).strip()
+        loc = r.get("region", "") + (f" · {r['developer']}" if r.get("developer") else "")
+        cards.append(
+            f'<a href="/property/{r["slug"]}" class="prop-card">'
+            f'<div class="prop-thumb">{info["icon"]}</div>'
+            f'<div class="prop-body"><span class="{badge_cls}">{txt}</span>'
+            f'<h3 class="prop-name">{r["name"]}</h3>'
+            f'<p class="prop-location">{loc}</p></div></a>')
+    return ('<!--related-->\n<section class="section related-listings">'
+            '<h2 class="section-title">관련 분양 현장</h2>'
+            '<p class="section-sub">같은 지역·유형의 다른 분양 현장도 함께 확인하세요</p>'
+            f'<div class="prop-grid">{"".join(cards)}</div></section>')
+
+
+_RELATED_RX = re.compile(r'\s*<!--related-->.*?</section>', re.S)
+
+
+def inject_related(h, slug, rec, records):
+    """Whitespace-normalising, idempotent injection just before </main>."""
+    body = related_section(slug, rec, records)
+    h = _RELATED_RX.sub("", h)                 # drop any prior block (+ leading ws)
+    if not body:
+        return h
+    return re.sub(r"\s*</main>", "\n" + body + "\n</main>", h, count=1)
+
+
 def clean_jsonld(slug, rec):
     cat = rec["category"]
     info = CAT.get(cat, CAT["apartment"])
@@ -175,7 +229,7 @@ def main_cta_bar():
 
 
 # ─────────────────────────────────────────────────────────────────────────────
-def generate_template(slug, rec, idx, today_iso):
+def generate_template(slug, rec, idx, today_iso, records=None):
     """Rebuild a template page from SSOT — clean logic, no estimates/hype."""
     cat = rec["category"]
     info = CAT[cat]
@@ -298,6 +352,7 @@ def generate_template(slug, rec, idx, today_iso):
     <p>청약 결과·분양가·계약 일정 등 더 자세한 정보는 더에셋스퀘어 본 사이트에서 확인하세요.</p>
     <a href="{MAIN}" target="_blank" rel="noopener">더에셋스퀘어 본 사이트에서 확인 →</a>
   </div>
+{related_section(slug, rec, records) if records else ""}
 </div>
 </main>
 
@@ -333,7 +388,7 @@ def _replace_jsonld(h: str, jsonld: str) -> str:
     return h.replace("</head>", f"  {repl}\n</head>", 1)
 
 
-def fix_existing(slug, rec, today_iso):
+def fix_existing(slug, rec, today_iso, records=None):
     """Surgically repair a rich hand-written page; preserve its unique content."""
     path = os.path.join(ROOT, "property", f"{slug}.html")
     h = open(path, encoding="utf-8").read()
@@ -363,6 +418,9 @@ def fix_existing(slug, rec, today_iso):
     if "데이터 기준일" not in h:
         h = re.sub(r'(분양 데이터 출처:[^<]*)</p>',
                    rf'\1 · 데이터 기준일 {today_iso}</p>', h)
+    # related cross-links: strip any prior block, re-inject fresh (idempotent)
+    if records:
+        h = inject_related(h, slug, rec, records)
     return h
 
 
@@ -450,17 +508,17 @@ def run(write=True):
         i = idx_by_cat.get(cat, 0); idx_by_cat[cat] = i + 1
         path = os.path.join(ROOT, "property", f"{slug}.html")
         if rec.get("template"):
-            out = generate_template(slug, rec, i, today_iso)
+            out = generate_template(slug, rec, i, today_iso, records)
         else:
-            out = fix_existing(slug, rec, today_iso)
+            out = fix_existing(slug, rec, today_iso, records)
         out = clean_urls(out)          # belt-and-suspenders
         if write:
             cur = open(path, encoding="utf-8").read() if os.path.exists(path) else ""
             if cur != out:
                 open(path, "w", encoding="utf-8").write(out)
                 changed.append(slug)
-    # home + 6 category pages
-    static = ["index.html"] + [f"{c}.html" for c in CAT]
+    # home + 6 category pages + 404 recovery page (keeps their links clean)
+    static = ["index.html", "404.html"] + [f"{c}.html" for c in CAT]
     for fn in static:
         p = os.path.join(ROOT, fn)
         if not os.path.exists(p):

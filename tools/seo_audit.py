@@ -16,7 +16,7 @@ from __future__ import annotations
 import json, os, re, sys, glob
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-SITE = "https://realestate1-3xh.pages.dev"
+SITE = "https://l.nolcool.com"
 
 # Primary keyword (must appear) + per-section sub keywords.
 PRIMARY = "부동산분양"

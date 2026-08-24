@@ -7,7 +7,7 @@ plain urllib. No pip dependencies, on purpose — this server has no pip.
 
 Env / args:
   GSC_KEY                 path to service-account JSON (default ~/.gsc/theasset-gsc.json)
-  GSC_SITE                Search Console property (default https://realestate1-3xh.pages.dev/)
+  GSC_SITE                Search Console property (default https://l.nolcool.com/)
   OPENSSL                 openssl binary path (default: auto-discover under /nix/store)
 
 Usage as library:
@@ -20,7 +20,7 @@ from __future__ import annotations
 import base64, glob, json, os, shutil, subprocess, time, urllib.request, urllib.error
 
 DEFAULT_KEY = os.path.expanduser("~/.gsc/theasset-gsc.json")
-DEFAULT_SITE = "https://realestate1-3xh.pages.dev/"
+DEFAULT_SITE = "https://l.nolcool.com/"
 TOKEN_URL = "https://oauth2.googleapis.com/token"
 # full scope = read + sitemap submit. Service account is owner so this is fine.
 SCOPE = "https://www.googleapis.com/auth/webmasters"

@@ -26,7 +26,7 @@ from __future__ import annotations
 import os, re, json, html as _html, datetime as dt
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-SITE = "https://realestate1-3xh.pages.dev"
+SITE = "https://l.nolcool.com"
 MAIN = "https://theassetsquare.com/"
 SSOT = os.path.join(ROOT, "tools", "data", "listings.json")
 CSS_VER = "2026060802"   # bumped so the status/entity/overflow edits invalidate cache

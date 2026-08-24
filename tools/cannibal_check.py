@@ -82,7 +82,7 @@ def main():
     for canon, files in by_canon.items():
         if len(files) <= 1:
             continue
-        canon_path = canon.replace("https://realestate1-3xh.pages.dev/", "")
+        canon_path = canon.replace("https://l.nolcool.com/", "")
         if not canon_path or canon_path.endswith("/"):
             canon_path = "index.html"
         if not any(f == canon_path or f.endswith("/" + canon_path) for f in files):

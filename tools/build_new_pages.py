@@ -18,7 +18,7 @@ import json, os, re, datetime as dt
 from string import Template
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-SITE = "https://realestate1-3xh.pages.dev"
+SITE = "https://l.nolcool.com"
 DATA = os.path.join(ROOT, "tools", "data", "new_listings_2026-06.json")
 TODAY = dt.date.fromisoformat("2026-06-01")
 

@@ -20,7 +20,7 @@ from __future__ import annotations
 import os, sys, json, subprocess, datetime as dt
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-SITE = "https://realestate1-3xh.pages.dev"
+SITE = "https://l.nolcool.com"
 
 
 def step(name, argv):

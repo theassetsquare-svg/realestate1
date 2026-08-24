@@ -11,7 +11,7 @@ Exit 0 = all good, 1 = problems.
 import glob, os, re, sys, urllib.request, urllib.error
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-SITE = "https://realestate1-3xh.pages.dev"
+SITE = "https://l.nolcool.com"
 CSS_VER = "2026052803"
 DENSITY_MAX = 3.0
 KWS = ["부동산분양", "지식산업센터", "오피스텔분양", "산업단지분양", "상가분양", "토지분양", "아파트분양"]

@@ -13,3 +13,6 @@ theasset-gsc.json
 tools/gsc_data/
 tools/audit_reports/
 tools/__pycache__/
+
+# 도구용 의존성 — 배포물이 아니다
+node_modules/

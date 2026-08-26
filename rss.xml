@@ -1,11 +1,620 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0">
 <channel>
-  <title>nolcool — 전국 나이트 안내</title>
+  <title>더에셋스퀘어 — 부동산분양 2026 가장 뜨거운 현장만 모았다</title>
   <link>https://l.nolcool.com/</link>
-  <description>전국 나이트 가게 안내 페이지 모음</description>
+  <description>전국 나이트 안내 — 전체 페이지</description>
   <language>ko</language>
   <lastBuildDate>Wed, 26 Aug 2026 00:00:00 GMT</lastBuildDate>
+  <item>
+    <title>더에셋스퀘어 — 부동산분양 2026 가장 뜨거운 현장만 모았다</title>
+    <link>https://l.nolcool.com/</link>
+    <guid isPermaLink="true">https://l.nolcool.com/</guid>
+    <description>더에셋스퀘어에서 부동산분양 정보를 한눈에. 2026년 서울·수도권 핵심 분양 현장을 전문가가 직접 분석한 투자 가치와 청약 전략을 제공합니다. 오티에르반포, 이촌르엘, 라클라체자이드파인 등.</description>
+    <pubDate>Wed, 26 Aug 2026 00:00:00 GMT</pubDate>
+  </item>
+  <item>
+    <title>아파트분양 — 지금 청약 가능한 실제 분양 현장</title>
+    <link>https://l.nolcool.com/apartment</link>
+    <guid isPermaLink="true">https://l.nolcool.com/apartment</guid>
+    <description>최신 데이터 기준 아파트분양 현장을 청약홈 데이터로 검증했습니다. 오티에르반포, 이촌르엘, 라클라체자이드파인 등 서울·수도권 핵심 아파트 청약 일정과 분양가를 비교하세요.</description>
+    <pubDate>Wed, 26 Aug 2026 00:00:00 GMT</pubDate>
+  </item>
+  <item>
+    <title>오피스텔분양 — 2026년 청약 접수 중인 실제 현장</title>
+    <link>https://l.nolcool.com/officetel</link>
+    <guid isPermaLink="true">https://l.nolcool.com/officetel</guid>
+    <description>최신 데이터 기준 오피스텔분양 현장을 청약홈 데이터로 검증했습니다. 왕십리역 어반홈스, 청량리역 요진 와이시티, 당산역 더클래스 한강 등 서울 역세권 오피스텔 청약 정보를 확인하세요.</description>
+    <pubDate>Wed, 26 Aug 2026 00:00:00 GMT</pubDate>
+  </item>
+  <item>
+    <title>상가분양 — 2026년 역세권 핵심 상권 투자 가치 비교</title>
+    <link>https://l.nolcool.com/store</link>
+    <guid isPermaLink="true">https://l.nolcool.com/store</guid>
+    <description>2026년 상가분양 현장의 투자 가치를 전문가가 직접 비교 분석합니다. 역세권 근린상가부터 신도시 복합몰까지, 상권 분석과 예상 수익률 데이터를 제공합니다.</description>
+    <pubDate>Wed, 26 Aug 2026 00:00:00 GMT</pubDate>
+  </item>
+  <item>
+    <title>지식산업센터분양 — 2026년 수도권 입주 가능한 곳 총정리</title>
+    <link>https://l.nolcool.com/knowledge-center</link>
+    <guid isPermaLink="true">https://l.nolcool.com/knowledge-center</guid>
+    <description>2026년 지식산업센터분양 현장을 총정리합니다. 판교·마곡·시화 등 핵심 산업단지 인근 분양가, 전용률, 입주 업종 제한까지 전문가가 분석합니다.</description>
+    <pubDate>Wed, 26 Aug 2026 00:00:00 GMT</pubDate>
+  </item>
+  <item>
+    <title>토지분양 — 2026년 개발 호재 지역만 엄선 분석</title>
+    <link>https://l.nolcool.com/land</link>
+    <guid isPermaLink="true">https://l.nolcool.com/land</guid>
+    <description>2026년 토지분양 현장을 개발 호재 기준으로 엄선했습니다. 수도권 택지지구, 산업단지 배후, 농지 전용 가능 필지까지 전문가가 투자 가치를 분석합니다.</description>
+    <pubDate>Wed, 26 Aug 2026 00:00:00 GMT</pubDate>
+  </item>
+  <item>
+    <title>산업단지분양 — 2026년 기업 입주 조건 비교 분석</title>
+    <link>https://l.nolcool.com/industrial</link>
+    <guid isPermaLink="true">https://l.nolcool.com/industrial</guid>
+    <description>2026년 산업단지분양 현장의 입주 조건과 인센티브를 비교합니다. 국가산단·일반산단·도시첨단산단별 분양가, 업종 제한, 지원 정책을 전문가가 정리했습니다.</description>
+    <pubDate>Wed, 26 Aug 2026 00:00:00 GMT</pubDate>
+  </item>
+  <item>
+    <title>아크로드서초 — 서초동 역대 최고 1,099대1 분양가·시세 비교전망</title>
+    <link>https://l.nolcool.com/property/acro-de-seocho</link>
+    <guid isPermaLink="true">https://l.nolcool.com/property/acro-de-seocho</guid>
+    <description>아크로드서초는 서울 서초구 서초동 1,161세대 아파트분양 현장입니다. DL이앤씨 아크로 브랜드, 일반분양 56세대(전부 59㎡).분양가 상한제 등으로 인근 실거래가와 차이가 있을 수 있으나, 실제 차익은 시장 상황에 따라 달라지며 보장되지 않습니다.</description>
+    <pubDate>Wed, 26 Aug 2026 00:00:00 GMT</pubDate>
+  </item>
+  <item>
+    <title>아크로리버스카이 — 동작구 대방동 강남 인접 아크로 프리미엄</title>
+    <link>https://l.nolcool.com/property/acro-river-sky</link>
+    <guid isPermaLink="true">https://l.nolcool.com/property/acro-river-sky</guid>
+    <description>아크로리버스카이는 서울 동작구 대방동 아파트분양 예정 현장입니다. DL이앤씨 아크로 프리미엄 브랜드, 강남권 인접 입지. 2026년 4월 분양 예정. 동작구 대방동의 새로운 랜드마크.</description>
+    <pubDate>Wed, 26 Aug 2026 00:00:00 GMT</pubDate>
+  </item>
+  <item>
+    <title>아산탕정자이 메트로시티 — 아산시아파트분양 입지·분양가 분석</title>
+    <link>https://l.nolcool.com/property/asan-tangjeong-xi-metrocity</link>
+    <guid isPermaLink="true">https://l.nolcool.com/property/asan-tangjeong-xi-metrocity</guid>
+    <description>아산탕정자이 메트로시티은(는) 충남 아산시 탕정면 아파트분양 현장입니다. GS건설·LH 시공·시행, 총 1,638세대. 전용 59~84㎡. 2026년 상반기 분양. 부동산분양 정보·청약 전략 정리.</description>
+    <pubDate>Wed, 26 Aug 2026 00:00:00 GMT</pubDate>
+  </item>
+  <item>
+    <title>범어역 파크드림 디아르 — 대구아파트분양 수성구 극희소</title>
+    <link>https://l.nolcool.com/property/beomeo-parkdream</link>
+    <guid isPermaLink="true">https://l.nolcool.com/property/beomeo-parkdream</guid>
+    <description>범어역 파크드림 디아르 대구아파트분양 수성구 일반분양 47세대 극희소. 2호선 범어역 역세권, 중도금무이자, 발코니확장무상, 수성구 명문학군. 2028년 10월 입주.</description>
+    <pubDate>Wed, 26 Aug 2026 00:00:00 GMT</pubDate>
+  </item>
+  <item>
+    <title>고양창릉 S-02 공공분양 — 고양시아파트분양 청약 전략 분석</title>
+    <link>https://l.nolcool.com/property/changneung-s02</link>
+    <guid isPermaLink="true">https://l.nolcool.com/property/changneung-s02</guid>
+    <description>고양창릉 S-02 공공분양은(는) 경기 고양시 덕양구 창릉동 아파트분양 현장입니다. LH·라인건설 시공·시행, 1,057세대 (이익공유형 공공분양). 전용 59~84㎡. 2026년 상반기 본청약. 부동산분양 정보·청약 전략 정리.</description>
+    <pubDate>Wed, 26 Aug 2026 00:00:00 GMT</pubDate>
+  </item>
+  <item>
+    <title>고양창릉 S-02 단지내상가 — 고양시상가분양 배후 수요·유동인구 분석</title>
+    <link>https://l.nolcool.com/property/changneung-s02-store</link>
+    <guid isPermaLink="true">https://l.nolcool.com/property/changneung-s02-store</guid>
+    <description>고양창릉 S-02 단지내상가은(는) 경기 고양시 덕양구 창릉동 상가분양 현장입니다. LH·라인건설 시공·시행, 단지내상가 다수 호실. 호실별 20~50㎡. 2026년 상반기 공급. 부동산분양 정보·청약 전략 정리.</description>
+    <pubDate>Wed, 26 Aug 2026 00:00:00 GMT</pubDate>
+  </item>
+  <item>
+    <title>창원자이더스카이 — 49층 초고층 아파트분양 비규제 전매자유</title>
+    <link>https://l.nolcool.com/property/changwon-xi-sky</link>
+    <guid isPermaLink="true">https://l.nolcool.com/property/changwon-xi-sky</guid>
+    <description>창원자이더스카이는 경남 창원시 중앙동 519세대 초고층 아파트분양 현장입니다. GS건설 시공 49층 랜드마크, 비규제지역으로 재당첨제한·전매제한 없음. 견본주택 1.1만명 방문.</description>
+    <pubDate>Wed, 26 Aug 2026 00:00:00 GMT</pubDate>
+  </item>
+  <item>
+    <title>철산자이 더 헤리티지 상가 — 3,804세대 단지내상가 투자</title>
+    <link>https://l.nolcool.com/property/cheolsan-xi-store</link>
+    <guid isPermaLink="true">https://l.nolcool.com/property/cheolsan-xi-store</guid>
+    <description>철산자이 더 헤리티지 단지내상가 46호실 분양. 광명시 철산동 3,804세대 고정수요, 7호선 철산역 도보권, 스트리트형 상가 배치로 가시성 극대화. 약 1만1천 배후수요 확보.</description>
+    <pubDate>Wed, 26 Aug 2026 00:00:00 GMT</pubDate>
+  </item>
+  <item>
+    <title>천안 수신 일반산업단지 — 미래모빌리티 특화 2027 준공</title>
+    <link>https://l.nolcool.com/property/cheonan-susin</link>
+    <guid isPermaLink="true">https://l.nolcool.com/property/cheonan-susin</guid>
+    <description>천안 수신 일반산업단지 전국 최초 환지 방식 개발 159만㎡. 미래모빌리티·2차전지 특화, 추정사업비 4582억원, 2027년 준공 예정. 일자리 3700개 창출 기대.</description>
+    <pubDate>Wed, 26 Aug 2026 00:00:00 GMT</pubDate>
+  </item>
+  <item>
+    <title>청량리역 요진 와이시티 — 멀티역세권 오피스텔 3룸 대형평형 희소가치</title>
+    <link>https://l.nolcool.com/property/cheongnyangni-ycity</link>
+    <guid isPermaLink="true">https://l.nolcool.com/property/cheongnyangni-ycity</guid>
+    <description>청량리역 요진 와이시티는 서울 동대문구 청량리동 오피스텔·도시형 155세대 복합단지입니다. 1호선·분당선·경의중앙선·경춘선·KTX 멀티역세권에 GTX-B·C 확정, 3룸 84% 구성. 선착순 동호수 지정 계약 중.</description>
+    <pubDate>Wed, 26 Aug 2026 00:00:00 GMT</pubDate>
+  </item>
+  <item>
+    <title>시티오씨엘 9단지 — 미추홀구아파트분양 입지·분양가 분석</title>
+    <link>https://l.nolcool.com/property/cityociel-9</link>
+    <guid isPermaLink="true">https://l.nolcool.com/property/cityociel-9</guid>
+    <description>시티오씨엘 9단지은(는) 인천 미추홀구 학익동 아파트분양 현장입니다. DK도시개발 시공·시행, 미정. 미정. 2026년 6월 분양 예정. 부동산분양 정보·청약 전략 정리.</description>
+    <pubDate>Wed, 26 Aug 2026 00:00:00 GMT</pubDate>
+  </item>
+  <item>
+    <title>대방역 여의도 더로드캐슬 — 초역세권 복합단지 여의도 3분</title>
+    <link>https://l.nolcool.com/property/daebang-roadcastle</link>
+    <guid isPermaLink="true">https://l.nolcool.com/property/daebang-roadcastle</guid>
+    <description>대방역 여의도 더로드캐슬은 서울 영등포구 신길동 아파트46세대+오피스텔6실 복합단지입니다. 대방역 도보3분 1호선+신림선 초역세권, 여의도 금융가 직결, 전 세대 2룸 구조. 5억 미만 서울 핵심 입지 분양.</description>
+    <pubDate>Wed, 26 Aug 2026 00:00:00 GMT</pubDate>
+  </item>
+  <item>
+    <title>당산역 더클래스 한강 — 도보2분 더블역세권 오피스텔 즉시입주 할인분양</title>
+    <link>https://l.nolcool.com/property/dangsan-theclass</link>
+    <guid isPermaLink="true">https://l.nolcool.com/property/dangsan-theclass</guid>
+    <description>당산역 더클래스 한강은 서울 영등포구 당산동 오피스텔64+도시형52세대 복합단지입니다. 당산역 도보2분 2호선+급행9호선 더블역세권, 한강공원 도보5분, 여의도 5분 거리. 준공완료 즉시입주, 10%할인+잔금유예 조건 선착순 분양 중.</description>
+    <pubDate>Wed, 26 Aug 2026 00:00:00 GMT</pubDate>
+  </item>
+  <item>
+    <title>덕수궁 롯데캐슬 136 — 서울 도심 초희소 아파트분양 완전 분석</title>
+    <link>https://l.nolcool.com/property/deoksugung-lottecastle</link>
+    <guid isPermaLink="true">https://l.nolcool.com/property/deoksugung-lottecastle</guid>
+    <description>덕수궁 롯데캐슬 136은 서울 중구 순화동 136세대 초소형 프리미엄 아파트분양 현장입니다. 비규제 상품으로 실거주의무 없이 도심 6개 노선을 누리는 서울 심장부 신규 공급을 전문가가 분석합니다.</description>
+    <pubDate>Wed, 26 Aug 2026 00:00:00 GMT</pubDate>
+  </item>
+  <item>
+    <title>e편한세상 동탄역 어반원 — GTX·SRT 역세권 오피스텔 240실</title>
+    <link>https://l.nolcool.com/property/dongtan-urbanone</link>
+    <guid isPermaLink="true">https://l.nolcool.com/property/dongtan-urbanone</guid>
+    <description>e편한세상 동탄역 어반원은 경기 화성시 동탄2신도시 오피스텔240실 대단지입니다. GTX·SRT 동탄역 도보권 초역세권, DL이앤씨 시공, 전용34·59㎡ 1.5룸·2룸, 2028년 7월 입주 예정. 비규제지역 전매 가능 분양.</description>
+    <pubDate>Wed, 26 Aug 2026 00:00:00 GMT</pubDate>
+  </item>
+  <item>
+    <title>드파인 아르티아 — 동작구아파트분양 청약 전략 분석</title>
+    <link>https://l.nolcool.com/property/dpine-artia</link>
+    <guid isPermaLink="true">https://l.nolcool.com/property/dpine-artia</guid>
+    <description>드파인 아르티아은(는) 서울 동작구 노량진동 아파트분양 현장입니다. SK에코플랜트 시공·시행, 총 404세대 / 일반분양 171세대. 전용 59~109㎡. 2026년 6월 분양. 부동산분양 정보·청약 전략 정리.</description>
+    <pubDate>Wed, 26 Aug 2026 00:00:00 GMT</pubDate>
+  </item>
+  <item>
+    <title>디지털엠파이어 평촌 비즈밸리 — GTX-C 수혜 지식산업센터</title>
+    <link>https://l.nolcool.com/property/empire-pyeongchon</link>
+    <guid isPermaLink="true">https://l.nolcool.com/property/empire-pyeongchon</guid>
+    <description>디지털엠파이어 평촌 비즈밸리 지식산업센터 분양. DL건설 시공, 681실, GTX-C 금정역 수혜, 쿼드러플 역세권. 평당 800만원대부터, 2027.04 준공 예정. 안양 호계동 옛 LG연구소 부지, 계약금 5% 무이자 대출.</description>
+    <pubDate>Wed, 26 Aug 2026 00:00:00 GMT</pubDate>
+  </item>
+  <item>
+    <title>한화포레나부산당리 — 사하구 더블역세권 아파트분양 계약금5%</title>
+    <link>https://l.nolcool.com/property/forena-busan-dangri</link>
+    <guid isPermaLink="true">https://l.nolcool.com/property/forena-busan-dangri</guid>
+    <description>한화포레나부산당리는 부산 사하구 당리동 543세대 아파트분양 현장입니다. 1호선 당리역·사하역 더블역세권, 한화건설 시공, 59㎡ 4.9억~, 84㎡ 6.9억~. 계약금 5%로 진입 가능.</description>
+    <pubDate>Wed, 26 Aug 2026 00:00:00 GMT</pubDate>
+  </item>
+  <item>
+    <title>검암역세권 B-1BL — 서구아파트분양 입지·분양가 분석</title>
+    <link>https://l.nolcool.com/property/geomam-station-b1</link>
+    <guid isPermaLink="true">https://l.nolcool.com/property/geomam-station-b1</guid>
+    <description>검암역세권 B-1BL은(는) 인천 서구 검암동 아파트분양 현장입니다. 공공·민간 컨소시엄 시공·시행, 미정. 미정. 2026년 6월 분양 예정. 부동산분양 정보·청약 전략 정리.</description>
+    <pubDate>Wed, 26 Aug 2026 00:00:00 GMT</pubDate>
+  </item>
+  <item>
+    <title>검단호수공원역 파라곤 — 인천아파트분양 1억 안전마진</title>
+    <link>https://l.nolcool.com/property/geomdan-paragon</link>
+    <guid isPermaLink="true">https://l.nolcool.com/property/geomdan-paragon</guid>
+    <description>검단호수공원역 파라곤 인천아파트분양 569세대 84㎡ 단일평형. 분양가상한제 약1억 안전마진, 검단신도시 AA36블록, 호수공원역 인접. 2028년 7월 입주 예정.</description>
+    <pubDate>Wed, 26 Aug 2026 00:00:00 GMT</pubDate>
+  </item>
+  <item>
+    <title>GH 비즈 경기광주역 — 광주시지식산업센터 임대수요·공실 점검</title>
+    <link>https://l.nolcool.com/property/gh-biz-gyeonggi-gwangju</link>
+    <guid isPermaLink="true">https://l.nolcool.com/property/gh-biz-gyeonggi-gwangju</guid>
+    <description>GH 비즈 경기광주역은(는) 경기 광주시 역동 417-2 지식산업센터분양 현장입니다. 경기주택도시공사(GH) 시공·시행, 분양 94호실 / 임대 201호실. 호실별. 2026년 5월 29일 분양 개시 / 10월 입주. 부동산분양 정보·청약 전략 정리.</description>
+    <pubDate>Wed, 26 Aug 2026 00:00:00 GMT</pubDate>
+  </item>
+  <item>
+    <title>공덕역자이르네 — 마포구 쿼드러플역세권 아파트분양 핵심 분석</title>
+    <link>https://l.nolcool.com/property/gongdeok-xi-lene</link>
+    <guid isPermaLink="true">https://l.nolcool.com/property/gongdeok-xi-lene</guid>
+    <description>공덕역자이르네는 서울 마포구 도화동 178세대 소형 특화 아파트분양 현장입니다. 공덕역 도보5분 쿼드러플역세권, 4-bay 구조, 경의선숲길 인접 마포 프리미엄 입지를 전문가가 분석합니다.</description>
+    <pubDate>Wed, 26 Aug 2026 00:00:00 GMT</pubDate>
+  </item>
+  <item>
+    <title>고양창릉 3기 신도시 택지 — 토지분양 GTX-A 강남 20분</title>
+    <link>https://l.nolcool.com/property/goyang-changneung</link>
+    <guid isPermaLink="true">https://l.nolcool.com/property/goyang-changneung</guid>
+    <description>고양창릉 3기 신도시 택지 토지분양 정보. 경기 고양시 덕양구 3,881호 공급, GTX-A 창릉역 강남 20분, 2026년 본청약. LH 공급 분양가상한제 적용 핵심 택지.</description>
+    <pubDate>Wed, 26 Aug 2026 00:00:00 GMT</pubDate>
+  </item>
+  <item>
+    <title>구리갈매역세권 상업용지 — GTX-B 수혜 대필지 투자</title>
+    <link>https://l.nolcool.com/property/guri-galmae-store</link>
+    <guid isPermaLink="true">https://l.nolcool.com/property/guri-galmae-store</guid>
+    <description>구리갈매역세권 상업용지 LH 대필지 공급. GTX-B 수혜 더블역세권, 경춘선 갈매역 도보권, 3.3㎡당 약 15백만원, 무이자 분할납부. 구리시 갈매동 79만㎡ 공공주택지구.</description>
+    <pubDate>Wed, 26 Aug 2026 00:00:00 GMT</pubDate>
+  </item>
+  <item>
+    <title>구로 아티스포럼 — 구로구지식산업센터 세제 혜택 정리</title>
+    <link>https://l.nolcool.com/property/guro-artisforum</link>
+    <guid isPermaLink="true">https://l.nolcool.com/property/guro-artisforum</guid>
+    <description>구로 아티스포럼은(는) 서울 구로구 구로동 지식산업센터분양 현장입니다. 민간 시행 시공·시행, 지하 3층~지상 20층. 전용 다양. 분양 진행. 부동산분양 정보·청약 전략 정리.</description>
+    <pubDate>Wed, 26 Aug 2026 00:00:00 GMT</pubDate>
+  </item>
+  <item>
+    <title>경기광주역 라온프라이빗 드림시티 — 광주시오피스텔분양 수익률·공실 분석</title>
+    <link>https://l.nolcool.com/property/gyeonggwangju-raon-dreamcity</link>
+    <guid isPermaLink="true">https://l.nolcool.com/property/gyeonggwangju-raon-dreamcity</guid>
+    <description>경기광주역 라온프라이빗 드림시티은(는) 경기 광주시 역동 오피스텔분양 현장입니다. 라온건설 시공·시행, 총 1,902세대 민간임대. 전용 59·74·84·100㎡. 회원 모집 중 (2026년). 부동산분양 정보·청약 전략 정리.</description>
+    <pubDate>Wed, 26 Aug 2026 00:00:00 GMT</pubDate>
+  </item>
+  <item>
+    <title>경산4 일반산업단지 — 탄소융복합 특화 29.3만/㎡</title>
+    <link>https://l.nolcool.com/property/gyeongsan4</link>
+    <guid isPermaLink="true">https://l.nolcool.com/property/gyeongsan4</guid>
+    <description>경산4 일반산업단지 KICOX 분양 산업용지 29.3만원/㎡. 경북 경산시 진량읍 탄소융복합·신소재 특화 239만㎡ 규모. 조성원가 이하 공급, 대구경북 제조업 최적 입지.</description>
+    <pubDate>Wed, 26 Aug 2026 00:00:00 GMT</pubDate>
+  </item>
+  <item>
+    <title>하남감일 단독주택용지 — 토지분양 LH 무이자 혜택</title>
+    <link>https://l.nolcool.com/property/hanam-gamil</link>
+    <guid isPermaLink="true">https://l.nolcool.com/property/hanam-gamil</guid>
+    <description>하남감일 단독주택용지 토지분양 정보. 경기 하남시 감일지구 LH 공급, 12개월 거치 3년 무이자 분할납부. 5호선 연장 감일역 도보권, 위례신도시 인접 프리미엄.</description>
+    <pubDate>Wed, 26 Aug 2026 00:00:00 GMT</pubDate>
+  </item>
+  <item>
+    <title>해링턴플레이스오룡역 — 대전 초역세권 아파트분양 계약금500만원</title>
+    <link>https://l.nolcool.com/property/harrington-oryong</link>
+    <guid isPermaLink="true">https://l.nolcool.com/property/harrington-oryong</guid>
+    <description>해링턴플레이스오룡역은 대전 중구 용두동 427세대 아파트분양 현장입니다. 1호선 오룡역 초역세권, 84㎡ 5.7~6.8억, 계약금 5%(500만원 정액제). 전매6개월, 거주의무없음, 12년 학세권.</description>
+    <pubDate>Wed, 26 Aug 2026 00:00:00 GMT</pubDate>
+  </item>
+  <item>
+    <title>힐스테이트 안양펠루스 — 안양아파트분양 즉시입주 후분양</title>
+    <link>https://l.nolcool.com/property/hillstate-anyang</link>
+    <guid isPermaLink="true">https://l.nolcool.com/property/hillstate-anyang</guid>
+    <description>힐스테이트 안양펠루스 안양아파트분양 후분양 즉시입주. 198세대 아파트+오피스텔 복합, 전세대 발코니확장 기본, 1·4호선+월곶판교선 트리플역세권. 5억3천만~8억6천만.</description>
+    <pubDate>Wed, 26 Aug 2026 00:00:00 GMT</pubDate>
+  </item>
+  <item>
+    <title>양주 회천 A24 단지내상가 — 양주시상가분양 단지내상가 포인트</title>
+    <link>https://l.nolcool.com/property/hoecheon-a24-store</link>
+    <guid isPermaLink="true">https://l.nolcool.com/property/hoecheon-a24-store</guid>
+    <description>양주 회천 A24 단지내상가은(는) 경기 양주시 회정동 상가분양 현장입니다. LH·신영건설 시공·시행, 단지내상가. 호실별. 2026년 공급. 부동산분양 정보·청약 전략 정리.</description>
+    <pubDate>Wed, 26 Aug 2026 00:00:00 GMT</pubDate>
+  </item>
+  <item>
+    <title>현대 테라타워 감일 — 하남시지식산업센터 입주 업종 가이드</title>
+    <link>https://l.nolcool.com/property/hyundai-teratower-gamil</link>
+    <guid isPermaLink="true">https://l.nolcool.com/property/hyundai-teratower-gamil</guid>
+    <description>현대 테라타워 감일은(는) 경기 하남시 감일지구 지식산업센터분양 현장입니다. 현대엔지니어링 시공·시행, 연면적 57,000㎡. 전용 다양. 분양 진행. 부동산분양 정보·청약 전략 정리.</description>
+    <pubDate>Wed, 26 Aug 2026 00:00:00 GMT</pubDate>
+  </item>
+  <item>
+    <title>이촌 르엘 — 용산 중대형 아파트분양 분양가·시세 비교전망</title>
+    <link>https://l.nolcool.com/property/ichon-lel</link>
+    <guid isPermaLink="true">https://l.nolcool.com/property/ichon-lel</guid>
+    <description>이촌 르엘은 서울 용산구 이촌동 750세대 규모 아파트분양 현장입니다.분양가 상한제 등으로 인근 실거래가와 차이가 있을 수 있으나, 실제 차익은 시장 상황에 따라 달라지며 보장되지 않습니다. 청약 4/9~14.</description>
+    <pubDate>Wed, 26 Aug 2026 00:00:00 GMT</pubDate>
+  </item>
+  <item>
+    <title>인천계양 3기 신도시 택지 — 토지분양 55㎡ 3.9억 첫 본청약</title>
+    <link>https://l.nolcool.com/property/incheon-gyeyang</link>
+    <guid isPermaLink="true">https://l.nolcool.com/property/incheon-gyeyang</guid>
+    <description>인천계양 3기 신도시 택지 토지분양 정보. 인천 계양구 1,290호 공급, 55㎡ 3.9억 분양가상한제. 3기 신도시 최초 본청약 완료, 박촌역 1km 생활 인프라 확보.</description>
+    <pubDate>Wed, 26 Aug 2026 00:00:00 GMT</pubDate>
+  </item>
+  <item>
+    <title>인천 남동 도시첨단산업단지 — 남동산단 대비 35% 저렴</title>
+    <link>https://l.nolcool.com/property/incheon-namdong</link>
+    <guid isPermaLink="true">https://l.nolcool.com/property/incheon-namdong</guid>
+    <description>인천 남동 도시첨단산업단지 LH 3차 분양 산업시설용지 5필지. 남동산단 대비 35% 저렴한 분양가, 첨단제조업 특화. 남촌동 233,307㎡ 규모 2026년 부지 조성 완료 예정.</description>
+    <pubDate>Wed, 26 Aug 2026 00:00:00 GMT</pubDate>
+  </item>
+  <item>
+    <title>인천 송도11공구 RC2BL — 연수구아파트분양 청약 전략 분석</title>
+    <link>https://l.nolcool.com/property/incheon-songdo-rc2</link>
+    <guid isPermaLink="true">https://l.nolcool.com/property/incheon-songdo-rc2</guid>
+    <description>인천 송도11공구 RC2BL은(는) 인천 연수구 송도동 아파트분양 현장입니다. 송도국제도시 시행 시공·시행, 미정. 미정. 2026년 6월 분양 예정. 부동산분양 정보·청약 전략 정리.</description>
+    <pubDate>Wed, 26 Aug 2026 00:00:00 GMT</pubDate>
+  </item>
+  <item>
+    <title>장위 푸르지오 마크원 단지내상가 — 성북구상가분양 배후 수요·유동인구 분석</title>
+    <link>https://l.nolcool.com/property/jangwi-markone-store</link>
+    <guid isPermaLink="true">https://l.nolcool.com/property/jangwi-markone-store</guid>
+    <description>장위 푸르지오 마크원 단지내상가은(는) 서울 성북구 장위동 상가분양 현장입니다. 대우건설 시공·시행, 단지내상가 다수 호실. 호실별 20~60㎡. 2026년 6월 분양. 부동산분양 정보·청약 전략 정리.</description>
+    <pubDate>Wed, 26 Aug 2026 00:00:00 GMT</pubDate>
+  </item>
+  <item>
+    <title>장위푸르지오마크원 — 동북권 최대 재개발 아파트분양 투자 분석</title>
+    <link>https://l.nolcool.com/property/jangwi-prugio</link>
+    <guid isPermaLink="true">https://l.nolcool.com/property/jangwi-prugio</guid>
+    <description>장위푸르지오마크원은 서울 성북구 장위동 2,004세대 대규모 아파트분양 현장입니다. 장위뉴타운 최대단지로 돌곶이역 도보3분, 84㎡ 약 13~14억 추정. 동북권 랜드마크 분양을 전문가가 분석합니다.</description>
+    <pubDate>Wed, 26 Aug 2026 00:00:00 GMT</pubDate>
+  </item>
+  <item>
+    <title>증평3 일반산업단지 — 증평군산업단지분양 공급가 정리</title>
+    <link>https://l.nolcool.com/property/jeungpyeong-3-industrial</link>
+    <guid isPermaLink="true">https://l.nolcool.com/property/jeungpyeong-3-industrial</guid>
+    <description>증평3 일반산업단지은(는) 충북 증평군 산업단지분양 현장입니다. 증평군·공영개발 시공·시행, 총면적 772,134㎡. 중·소형 공장용지. 2026년 공사 착수 / 2028년 준공. 부동산분양 정보·청약 전략 정리.</description>
+    <pubDate>Wed, 26 Aug 2026 00:00:00 GMT</pubDate>
+  </item>
+  <item>
+    <title>건대 프라하임 — 건대입구 더블역세권 오피스텔 2027 입주</title>
+    <link>https://l.nolcool.com/property/konkuk-prahime</link>
+    <guid isPermaLink="true">https://l.nolcool.com/property/konkuk-prahime</guid>
+    <description>건대 프라하임은 서울 광진구 화양동 오피스텔72실+도시형16세대 복합단지입니다. 건대입구역 2·7호선 도보5분 더블역세권, 성수·강남 생활권, 2027년 10월 입주 예정. 전매 가능 비규제 오피스텔 선착순 분양 중.</description>
+    <pubDate>Wed, 26 Aug 2026 00:00:00 GMT</pubDate>
+  </item>
+  <item>
+    <title>라클라체자이드파인 — 노량진뉴타운 첫 분양 1,499세대 분석</title>
+    <link>https://l.nolcool.com/property/laclache-zaide-fine</link>
+    <guid isPermaLink="true">https://l.nolcool.com/property/laclache-zaide-fine</guid>
+    <description>라클라체자이드파인은 서울 동작구 노량진동 1,499세대 규모 아파트분양 현장입니다. 노량진뉴타운 첫 분양으로 GS건설·SK에코플랜트가 시공합니다. 청약 4/13~16.</description>
+    <pubDate>Wed, 26 Aug 2026 00:00:00 GMT</pubDate>
+  </item>
+  <item>
+    <title>목동 윤슬자이 단지내상가 — 양천구상가분양 임대수익률 점검</title>
+    <link>https://l.nolcool.com/property/mokdong-yunseul-store</link>
+    <guid isPermaLink="true">https://l.nolcool.com/property/mokdong-yunseul-store</guid>
+    <description>목동 윤슬자이 단지내상가은(는) 서울 양천구 목동 상가분양 현장입니다. GS건설 시공·시행, 단지 내 근린생활시설. 호실별. 2026년 6월 분양. 부동산분양 정보·청약 전략 정리.</description>
+    <pubDate>Wed, 26 Aug 2026 00:00:00 GMT</pubDate>
+  </item>
+  <item>
+    <title>목동 윤슬자이 — 양천구오피스텔분양 1인가구 입지 비교</title>
+    <link>https://l.nolcool.com/property/mokdong-yunseul-xi</link>
+    <guid isPermaLink="true">https://l.nolcool.com/property/mokdong-yunseul-xi</guid>
+    <description>목동 윤슬자이은(는) 서울 양천구 목동 오피스텔분양 현장입니다. GS건설 시공·시행, 651실. 전용 114~204㎡. 2026년 6월 분양 / 2030년 하반기 입주. 부동산분양 정보·청약 전략 정리.</description>
+    <pubDate>Wed, 26 Aug 2026 00:00:00 GMT</pubDate>
+  </item>
+  <item>
+    <title>센트럴포레 문현 — 남구아파트분양 꼭 알아야 할 청약 정보</title>
+    <link>https://l.nolcool.com/property/munhyun-central-fore</link>
+    <guid isPermaLink="true">https://l.nolcool.com/property/munhyun-central-fore</guid>
+    <description>센트럴포레 문현은(는) 부산 남구 문현동 아파트분양 현장입니다. 포스코이앤씨 시공·시행, 총 791세대. 전용 59·75·84㎡. 2026년 6월 분양 예정. 부동산분양 정보·청약 전략 정리.</description>
+    <pubDate>Wed, 26 Aug 2026 00:00:00 GMT</pubDate>
+  </item>
+  <item>
+    <title>라클라체자이드파인 상업시설 — 노량진뉴타운 초역세권</title>
+    <link>https://l.nolcool.com/property/noryangjin-store</link>
+    <guid isPermaLink="true">https://l.nolcool.com/property/noryangjin-store</guid>
+    <description>라클라체자이드파인 상업시설 노량진뉴타운 첫 분양. 1,499세대 배후수요, 1·9호선 노량진역 도보권, 여의도 3분 직주근접. GS건설·SK에코 시공 서울 동작구 프리미엄 상가.</description>
+    <pubDate>Wed, 26 Aug 2026 00:00:00 GMT</pubDate>
+  </item>
+  <item>
+    <title>오브코스 구로 — G밸리 드라이브인 제조형 지식산업센터</title>
+    <link>https://l.nolcool.com/property/ofcourse-guro</link>
+    <guid isPermaLink="true">https://l.nolcool.com/property/ofcourse-guro</guid>
+    <description>오브코스 구로 지식산업센터 분양. 서울 구로구 구로동 G밸리, 포스코이앤씨 시공, 584실, 드라이브인시스템, 층고 3.8~6M. 구일역 도보 4분, GTX-B 수혜 예정. 취득세 35% 감면, 경량제조부터 섹션오피스까지 다양한 타입.</description>
+    <pubDate>Wed, 26 Aug 2026 00:00:00 GMT</pubDate>
+  </item>
+  <item>
+    <title>온천장 하늘채 엘리시움 — 동래구 역세권 아파트분양 청약 분석</title>
+    <link>https://l.nolcool.com/property/oncheonjang-hanulchae</link>
+    <guid isPermaLink="true">https://l.nolcool.com/property/oncheonjang-hanulchae</guid>
+    <description>온천장 하늘채 엘리시움은 부산 동래구 온천동 436세대 아파트분양 현장입니다. 1호선 온천장역 도보3분, 코오롱 하늘채 브랜드, 동래 전통부촌 입지를 전문가가 분석합니다. 청약 4/13~15.</description>
+    <pubDate>Wed, 26 Aug 2026 00:00:00 GMT</pubDate>
+  </item>
+  <item>
+    <title>오티에르 반포 — 서초구 하이엔드 아파트분양 분양가·시세 비교분석</title>
+    <link>https://l.nolcool.com/property/otier-banpo</link>
+    <guid isPermaLink="true">https://l.nolcool.com/property/otier-banpo</guid>
+    <description>오티에르 반포는 서울 서초구 잠원동 251세대 규모 하이엔드 아파트분양 현장입니다.분양가 상한제 등으로 인근 실거래가와 차이가 있을 수 있으나, 실제 차익은 시장 상황에 따라 달라지며 보장되지 않습니다.</description>
+    <pubDate>Wed, 26 Aug 2026 00:00:00 GMT</pubDate>
+  </item>
+  <item>
+    <title>파주 운정3 단독주택용지 — 파주시토지분양 공급조건 정리</title>
+    <link>https://l.nolcool.com/property/paju-unjeong3-house-land</link>
+    <guid isPermaLink="true">https://l.nolcool.com/property/paju-unjeong3-house-land</guid>
+    <description>파주 운정3 단독주택용지은(는) 경기 파주시 동패동·목동동 토지분양 현장입니다. LH 시공·시행, 단독·점포겸용 다수 필지. 필지별 200~330㎡. 2026년 — 유보지 용도전환 후 공급. 부동산분양 정보·청약 전략 정리.</description>
+    <pubDate>Wed, 26 Aug 2026 00:00:00 GMT</pubDate>
+  </item>
+  <item>
+    <title>풍무역세권 수자인 그라센트 2차 — 김포아파트분양 최대 안전마진</title>
+    <link>https://l.nolcool.com/property/pungmu-sujain</link>
+    <guid isPermaLink="true">https://l.nolcool.com/property/pungmu-sujain</guid>
+    <description>풍무역세권 수자인 그라센트 2차 김포아파트분양 84·105㎡ 639세대. 분양가상한제 최대 1억 안전마진, 풍무역 초역세권, 서울5호선 연장 수혜 단지. 2029년 1월 입주.</description>
+    <pubDate>Wed, 26 Aug 2026 00:00:00 GMT</pubDate>
+  </item>
+  <item>
+    <title>평택포승 BIX 산업단지 — 경기경제자유구역 47.5만/㎡</title>
+    <link>https://l.nolcool.com/property/pyeongtaek-bix</link>
+    <guid isPermaLink="true">https://l.nolcool.com/property/pyeongtaek-bix</guid>
+    <description>평택포승 BIX 산업단지 GH 분양 산업시설용지 6필지 37,747㎡. 경기경제자유구역 핵심 거점, ㎡당 47.5만원 조성원가 공급. 평택항 인접 물류 최적 입지.</description>
+    <pubDate>Wed, 26 Aug 2026 00:00:00 GMT</pubDate>
+  </item>
+  <item>
+    <title>평택 브레인시티 일반산업단지 — 평택시산업단지분양 클러스터 분석</title>
+    <link>https://l.nolcool.com/property/pyeongtaek-brain-city-industrial</link>
+    <guid isPermaLink="true">https://l.nolcool.com/property/pyeongtaek-brain-city-industrial</guid>
+    <description>평택 브레인시티 일반산업단지은(는) 경기 평택시 도일동·장안동 산업단지분양 현장입니다. 평택 브레인시티개발 시공·시행, 총면적 4,825,152㎡. 산업·연구·상업 복합 필지. 2026년 KAIST 평택캠퍼스 1단계 개교 / 분양 진행. 부동산분양 정보·청약 전략 정리.</description>
+    <pubDate>Wed, 26 Aug 2026 00:00:00 GMT</pubDate>
+  </item>
+  <item>
+    <title>평택 고덕 우미린 프레스티지 — 평택시아파트분양 꼭 알아야 할 청약 정보</title>
+    <link>https://l.nolcool.com/property/pyeongtaek-godeok-woomilin-prestige</link>
+    <guid isPermaLink="true">https://l.nolcool.com/property/pyeongtaek-godeok-woomilin-prestige</guid>
+    <description>평택 고덕 우미린 프레스티지은(는) 경기 평택시 고덕동 아파트분양 현장입니다. 우미건설 컨소시엄 시공·시행, 총 743세대. 전용 84·94·101·111㎡. 2026년 5~6월 분양. 부동산분양 정보·청약 전략 정리.</description>
+    <pubDate>Wed, 26 Aug 2026 00:00:00 GMT</pubDate>
+  </item>
+  <item>
+    <title>평택 고덕 우미린 프레스티지 단지내상가 — 평택시상가분양 단지내상가 포인트</title>
+    <link>https://l.nolcool.com/property/pyeongtaek-godeok-woomilin-store</link>
+    <guid isPermaLink="true">https://l.nolcool.com/property/pyeongtaek-godeok-woomilin-store</guid>
+    <description>평택 고덕 우미린 프레스티지 단지내상가은(는) 경기 평택시 고덕동 상가분양 현장입니다. 우미건설 컨소시엄 시공·시행, 단지내상가. 호실별. 2026년 5~6월 분양. 부동산분양 정보·청약 전략 정리.</description>
+    <pubDate>Wed, 26 Aug 2026 00:00:00 GMT</pubDate>
+  </item>
+  <item>
+    <title>평택항 BIX 일반산업단지 후속 — 평택시산업단지분양 물류·교통 입지 분석</title>
+    <link>https://l.nolcool.com/property/pyeongtaek-port-bix-2</link>
+    <guid isPermaLink="true">https://l.nolcool.com/property/pyeongtaek-port-bix-2</guid>
+    <description>평택항 BIX 일반산업단지 후속은(는) 경기 평택시 포승읍 산업단지분양 현장입니다. 평택도시공사·민간 시공·시행, 추가 공급 필지. 공장·물류 필지. 2026년 후속 공급. 부동산분양 정보·청약 전략 정리.</description>
+    <pubDate>Wed, 26 Aug 2026 00:00:00 GMT</pubDate>
+  </item>
+  <item>
+    <title>래미안엘라비네 — 강서구 첫 래미안 분양가상한제 미적용 전매3년</title>
+    <link>https://l.nolcool.com/property/raemian-elravine</link>
+    <guid isPermaLink="true">https://l.nolcool.com/property/raemian-elravine</guid>
+    <description>래미안엘라비네는 서울 강서구 방화동 방화6구역 재건축 아파트분양입니다. 삼성물산 시공 557세대, 일반분양 272세대. 84㎡ 17~18.4억, 분양가상한제 미적용, 전매 3년, 거주의무 없음.</description>
+    <pubDate>Wed, 26 Aug 2026 00:00:00 GMT</pubDate>
+  </item>
+  <item>
+    <title>새만금 수변도시 단독주택용지 — 토지분양 평당 200만원대</title>
+    <link>https://l.nolcool.com/property/saemangeum-land</link>
+    <guid isPermaLink="true">https://l.nolcool.com/property/saemangeum-land</guid>
+    <description>새만금 수변도시 단독주택용지 토지분양 정보. 전북 군산시 22필지 공급, 평당 200만원대 조성원가, 새만금개발공사 추첨 분양. 267~328㎡ 필지, 수변 생태도시 미래가치.</description>
+    <pubDate>Wed, 26 Aug 2026 00:00:00 GMT</pubDate>
+  </item>
+  <item>
+    <title>새만금 1공구 지원시설용지 — 군산시산업단지분양 공급가 정리</title>
+    <link>https://l.nolcool.com/property/saemangeum-support-1</link>
+    <guid isPermaLink="true">https://l.nolcool.com/property/saemangeum-support-1</guid>
+    <description>새만금 1공구 지원시설용지은(는) 전북 군산시 새만금산업단지 산업단지분양 현장입니다. 새만금개발청 시공·시행, 지원시설용지 다수 필지. 필지별 산업·업무·상업 지원. 2026년 신규 분양 공고. 부동산분양 정보·청약 전략 정리.</description>
+    <pubDate>Wed, 26 Aug 2026 00:00:00 GMT</pubDate>
+  </item>
+  <item>
+    <title>서울숲 더스페이스 — 성동구지식산업센터 임대수요·공실 점검</title>
+    <link>https://l.nolcool.com/property/seoul-forest-thespace</link>
+    <guid isPermaLink="true">https://l.nolcool.com/property/seoul-forest-thespace</guid>
+    <description>서울숲 더스페이스은(는) 서울 성동구 성수동1가 지식산업센터분양 현장입니다. 현대 아산 시공·시행, 연면적 25,623㎡. 전용 30~116㎡. 분양 진행 중. 부동산분양 정보·청약 전략 정리.</description>
+    <pubDate>Wed, 26 Aug 2026 00:00:00 GMT</pubDate>
+  </item>
+  <item>
+    <title>서울원아이파크 — 노원구 3,032세대 대규모 복합단지 무순위 558세대</title>
+    <link>https://l.nolcool.com/property/seoul-one-ipark</link>
+    <guid isPermaLink="true">https://l.nolcool.com/property/seoul-one-ipark</guid>
+    <description>서울원아이파크는 서울 노원구 월계동 광운대역 인근 3,032세대 대규모 복합단지 아파트분양입니다. HDC현대산업개발 시공, 84㎡ 10.4~12.1억, 2028년 7월 입주. 무순위 558세대 기회.</description>
+    <pubDate>Wed, 26 Aug 2026 00:00:00 GMT</pubDate>
+  </item>
+  <item>
+    <title>신반포 22차 재건축 — 서초구아파트분양 입지·분양가 분석</title>
+    <link>https://l.nolcool.com/property/shinbanpo-22</link>
+    <guid isPermaLink="true">https://l.nolcool.com/property/shinbanpo-22</guid>
+    <description>신반포 22차 재건축은(는) 서울 서초구 잠원동 아파트분양 현장입니다. 현대엔지니어링 시공·시행, 총 160세대 / 일반분양 28세대. 전용 59~135㎡. 2026년 6월 분양 예정. 부동산분양 정보·청약 전략 정리.</description>
+    <pubDate>Wed, 26 Aug 2026 00:00:00 GMT</pubDate>
+  </item>
+  <item>
+    <title>신광교 클라우드 시티 — 용인시지식산업센터 세제 혜택 정리</title>
+    <link>https://l.nolcool.com/property/shingwanggyo-cloud-city</link>
+    <guid isPermaLink="true">https://l.nolcool.com/property/shingwanggyo-cloud-city</guid>
+    <description>신광교 클라우드 시티은(는) 경기 용인시 기흥구 영덕동 지식산업센터분양 현장입니다. 현대엔지니어링 시공·시행, 연면적 약 35만㎡ (5개동). 전용 30~200㎡대. 분양 중 (2026년). 부동산분양 정보·청약 전략 정리.</description>
+    <pubDate>Wed, 26 Aug 2026 00:00:00 GMT</pubDate>
+  </item>
+  <item>
+    <title>시흥거모호반써밋B1 — 분양가상한제 84㎡ 아파트분양 공공택지</title>
+    <link>https://l.nolcool.com/property/siheung-hoban</link>
+    <guid isPermaLink="true">https://l.nolcool.com/property/siheung-hoban</guid>
+    <description>시흥거모호반써밋B1은 경기 시흥시 거모동 353세대 아파트분양 현장입니다. 분양가상한제 적용 LH 공공분양, 비규제지역, 전체 84㎡ 단일평형. 호반건설 써밋 브랜드 시공.</description>
+    <pubDate>Wed, 26 Aug 2026 00:00:00 GMT</pubDate>
+  </item>
+  <item>
+    <title>송파위례 아피체 — 송파구오피스텔분양 임대수익 시뮬레이션</title>
+    <link>https://l.nolcool.com/property/songpa-wirye-apiche</link>
+    <guid isPermaLink="true">https://l.nolcool.com/property/songpa-wirye-apiche</guid>
+    <description>송파위례 아피체은(는) 서울 송파구 위례신도시 오피스텔분양 현장입니다. 위례 시행조합 시공·시행, 총 117실. 전용 44·57·59㎡. 2026년 6월 분양. 부동산분양 정보·청약 전략 정리.</description>
+    <pubDate>Wed, 26 Aug 2026 00:00:00 GMT</pubDate>
+  </item>
+  <item>
+    <title>써밋더힐 — 동작구 흑석동 준강남 반포 인접 1,515세대</title>
+    <link>https://l.nolcool.com/property/summit-thehill</link>
+    <guid isPermaLink="true">https://l.nolcool.com/property/summit-thehill</guid>
+    <description>써밋더힐은 서울 동작구 흑석동 흑석11구역 재개발 아파트분양 현장입니다. 대우건설 써밋 브랜드, 1,515세대 대단지. 59㎡ ~10억, 84㎡ ~13억 예상. 9호선 흑석역 도보11분, 반포 생활권.</description>
+    <pubDate>Wed, 26 Aug 2026 00:00:00 GMT</pubDate>
+  </item>
+  <item>
+    <title>수원 당수 단독주택용지 — 수원시토지분양 필지 활용 가이드</title>
+    <link>https://l.nolcool.com/property/suwon-dangsu-house-land</link>
+    <guid isPermaLink="true">https://l.nolcool.com/property/suwon-dangsu-house-land</guid>
+    <description>수원 당수 단독주택용지은(는) 경기 수원시 권선구 당수동 토지분양 현장입니다. LH 시공·시행, 약 490호 규모. 필지별 단독주택용지. 2026년 유보지 용도전환 후 공급. 부동산분양 정보·청약 전략 정리.</description>
+    <pubDate>Wed, 26 Aug 2026 00:00:00 GMT</pubDate>
+  </item>
+  <item>
+    <title>현대 테라타워 세마역 — 제조형 지식산업센터 수익률 분석</title>
+    <link>https://l.nolcool.com/property/terra-tower-sema</link>
+    <guid isPermaLink="true">https://l.nolcool.com/property/terra-tower-sema</guid>
+    <description>현대 테라타워 세마역 지식산업센터 분양. 현대엔지니어링 시공, 1호선 세마역 역세권, 599실, 제조형 460실 특화. 평당 1,200만원대, LG클러스터·삼성 인접, 수도권 제2순환고속도로 북오산IC 직결. 오산 세교 최대 규모.</description>
+    <pubDate>Wed, 26 Aug 2026 00:00:00 GMT</pubDate>
+  </item>
+  <item>
+    <title>더샵프리엘라 — 영등포 뉴타운 아파트분양 문래역 초역세권</title>
+    <link>https://l.nolcool.com/property/thesharp-priella</link>
+    <guid isPermaLink="true">https://l.nolcool.com/property/thesharp-priella</guid>
+    <description>더샵프리엘라는 서울 영등포구 문래동 324세대 아파트분양 현장입니다. 포스코이앤씨 시공, 2호선 문래역 인근 영등포 뉴타운 입지에 84㎡ 약 17억원. 전매3년, 거주의무없음.</description>
+    <pubDate>Wed, 26 Aug 2026 00:00:00 GMT</pubDate>
+  </item>
+  <item>
+    <title>더샵신길센트럴시티 — 영등포 신풍역 역세권 1순위 31.9대1 경쟁률</title>
+    <link>https://l.nolcool.com/property/thesharp-singil</link>
+    <guid isPermaLink="true">https://l.nolcool.com/property/thesharp-singil</guid>
+    <description>더샵신길센트럴시티는 서울 영등포구 신길동 2,054세대 아파트분양 현장입니다. 포스코이앤씨 시공, 7호선 신풍역 역세권, 84㎡ 18.8억. 1순위 31.9대1 경쟁률 기록, 신안산선 2029 개통 수혜.</description>
+    <pubDate>Wed, 26 Aug 2026 00:00:00 GMT</pubDate>
+  </item>
+  <item>
+    <title>의정부 고산 점포겸용 단독주택용지 — 의정부시토지분양 건축 용도 정리</title>
+    <link>https://l.nolcool.com/property/uijeongbu-gosan-shop-house</link>
+    <guid isPermaLink="true">https://l.nolcool.com/property/uijeongbu-gosan-shop-house</guid>
+    <description>의정부 고산 점포겸용 단독주택용지은(는) 경기 의정부시 고산동 토지분양 현장입니다. LH 시공·시행, 근린·점포겸용 다수 필지. 필지별 230~330㎡. 2026년 5월 29일 공급공고. 부동산분양 정보·청약 전략 정리.</description>
+    <pubDate>Wed, 26 Aug 2026 00:00:00 GMT</pubDate>
+  </item>
+  <item>
+    <title>의정부역 센트럴 아이파크 — 의정부아파트분양 47층 랜드마크</title>
+    <link>https://l.nolcool.com/property/uijeongbu-ipark</link>
+    <guid isPermaLink="true">https://l.nolcool.com/property/uijeongbu-ipark</guid>
+    <description>의정부역 센트럴 아이파크 의정부아파트분양 556세대 47층 초고층 랜드마크. 1호선 의정부역 초역세권, GTX-C 강남 직결, 비규제지역 전매1년. 아파트400+오피스텔156.</description>
+    <pubDate>Wed, 26 Aug 2026 00:00:00 GMT</pubDate>
+  </item>
+  <item>
+    <title>의정부 민락2 점포겸용 단독주택용지 — 의정부시토지분양 공급조건 정리</title>
+    <link>https://l.nolcool.com/property/uijeongbu-mirak2-shop-house</link>
+    <guid isPermaLink="true">https://l.nolcool.com/property/uijeongbu-mirak2-shop-house</guid>
+    <description>의정부 민락2 점포겸용 단독주택용지은(는) 경기 의정부시 민락동 토지분양 현장입니다. LH 시공·시행, 점포겸용 다수 필지. 필지별 230~300㎡. 2026년 5월 29일 공급공고. 부동산분양 정보·청약 전략 정리.</description>
+    <pubDate>Wed, 26 Aug 2026 00:00:00 GMT</pubDate>
+  </item>
+  <item>
+    <title>의왕초평 근린생활시설용지 — LH 택지 상업투자 기회</title>
+    <link>https://l.nolcool.com/property/uiwang-chopyeong</link>
+    <guid isPermaLink="true">https://l.nolcool.com/property/uiwang-chopyeong</guid>
+    <description>의왕초평 근린생활시설용지 LH 공급. 경기 의왕시 초평동 공공지원민간임대 공급촉진지구 내 근린상업용지. 신규 택지 입주민 배후수요 확보, 안정적 상가 토지 투자 기회.</description>
+    <pubDate>Wed, 26 Aug 2026 00:00:00 GMT</pubDate>
+  </item>
+  <item>
+    <title>업성 푸르지오 레이크시티 — 천안 호수뷰 아파트분양 청약 분석</title>
+    <link>https://l.nolcool.com/property/upseong-prugio</link>
+    <guid isPermaLink="true">https://l.nolcool.com/property/upseong-prugio</guid>
+    <description>업성 푸르지오 레이크시티는 충남 천안시 업성동 1,908세대 대규모 아파트분양 현장입니다. 성성호수공원 52.8만㎡ 영구호수뷰, 푸르지오 브랜드타운 25,000세대 메가시티를 전문가가 분석합니다.</description>
+    <pubDate>Wed, 26 Aug 2026 00:00:00 GMT</pubDate>
+  </item>
+  <item>
+    <title>왕십리역 어반홈스 — 쿼드러플역세권 오피스텔 즉시입주 투자분석</title>
+    <link>https://l.nolcool.com/property/wangsimni-urbanhomes</link>
+    <guid isPermaLink="true">https://l.nolcool.com/property/wangsimni-urbanhomes</guid>
+    <description>왕십리역 어반홈스는 서울 성동구 도선동 오피스텔분양 현장입니다. 왕십리역 도보3분 쿼드러플역세권에 GTX-C 수혜까지 확정된 풀퍼니시드 2룸 오피스텔 84실, 즉시 입주 가능합니다. 5.1~5.9억.</description>
+    <pubDate>Wed, 26 Aug 2026 00:00:00 GMT</pubDate>
+  </item>
+  <item>
+    <title>월계 중흥S클래스 — 노원구아파트분양 전문가가 본 분양 포인트</title>
+    <link>https://l.nolcool.com/property/wolgye-jungheung-sclass</link>
+    <guid isPermaLink="true">https://l.nolcool.com/property/wolgye-jungheung-sclass</guid>
+    <description>월계 중흥S클래스은(는) 서울 노원구 월계동 아파트분양 현장입니다. 중흥건설 시공·시행, 총 355세대. 전용 59~84㎡. 2026년 5~6월 분양. 부동산분양 정보·청약 전략 정리.</description>
+    <pubDate>Wed, 26 Aug 2026 00:00:00 GMT</pubDate>
+  </item>
+  <item>
+    <title>양주 회천 단독주택용지 — 양주시토지분양 입지·개발계획 분석</title>
+    <link>https://l.nolcool.com/property/yangju-hoecheon-house-land</link>
+    <guid isPermaLink="true">https://l.nolcool.com/property/yangju-hoecheon-house-land</guid>
+    <description>양주 회천 단독주택용지은(는) 경기 양주시 회정동 토지분양 현장입니다. LH 시공·시행, 필지별 공급. 단독 230~300㎡. 2026년 LH 수도권 공급계획. 부동산분양 정보·청약 전략 정리.</description>
+    <pubDate>Wed, 26 Aug 2026 00:00:00 GMT</pubDate>
+  </item>
+  <item>
+    <title>영등포자이타워 — 양평역 초역세권 지식산업센터 투자분석</title>
+    <link>https://l.nolcool.com/property/ydp-xi-tower</link>
+    <guid isPermaLink="true">https://l.nolcool.com/property/ydp-xi-tower</guid>
+    <description>영등포자이타워 지식산업센터 분양. 5호선 양평역 초역세권, GS건설 시공, 연면적 11,657평, 평당 2,050만원대. 취득세 35% 감면, 중도금 무이자, 주차 법정대비 177%. 영등포 지식산업센터 최저가 분양 현장.</description>
+    <pubDate>Wed, 26 Aug 2026 00:00:00 GMT</pubDate>
+  </item>
+  <item>
+    <title>부천 역곡 A2 단지내상가 — 부천시상가분양 임대수익률 점검</title>
+    <link>https://l.nolcool.com/property/yeokgok-a2-store</link>
+    <guid isPermaLink="true">https://l.nolcool.com/property/yeokgok-a2-store</guid>
+    <description>부천 역곡 A2 단지내상가은(는) 경기 부천시 역곡동 상가분양 현장입니다. LH 시공·시행, 단지내상가 (신혼희망타운). 호실별. 2026년 공급. 부동산분양 정보·청약 전략 정리.</description>
+    <pubDate>Wed, 26 Aug 2026 00:00:00 GMT</pubDate>
+  </item>
+  <item>
+    <title>제2용인테크노밸리 일반산업단지 — 용인시산업단지분양 입주 조건 비교</title>
+    <link>https://l.nolcool.com/property/yongin-techno-valley-2</link>
+    <guid isPermaLink="true">https://l.nolcool.com/property/yongin-techno-valley-2</guid>
+    <description>제2용인테크노밸리 일반산업단지은(는) 경기 용인시 처인구 덕성리 산업단지분양 현장입니다. 용인특례시·공영개발 시공·시행, 46개 필지 271,719㎡. 필지별 1,000~10,000㎡. 2026년 하반기 준공. 부동산분양 정보·청약 전략 정리.</description>
+    <pubDate>Wed, 26 Aug 2026 00:00:00 GMT</pubDate>
+  </item>
   <item>
     <title>신림그랑프리나이트, 여름에만 갔던 이유</title>
     <link>https://l.nolcool.com/sillim-grandprix-night</link>

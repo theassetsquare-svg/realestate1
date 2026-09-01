@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', function() {
       {name:'덕수궁 롯데캐슬 136',meta:'서울 중구 순화동 · 136세대 · 비규제 도심 희소',url:'/property/deoksugung-lottecastle.html'},
       {name:'온천장 하늘채 엘리시움',meta:'부산 동래구 · 436세대 · 청약중 4/13~15',url:'/property/oncheonjang-hanulchae.html'},
       {name:'업성 푸르지오 레이크시티',meta:'충남 천안시 · 1,908세대 · 청약중 4/13~15',url:'/property/upseong-prugio.html'},
-      {name:'풍무역세권 수자인 그라센트 2차',meta:'경기 김포 · 639세대 · 84㎡ 7.1억~',url:'/property/pungmu-sujain.html'},
+      {name:'풍무역세권 수자인 그라센트 다음 자리',meta:'경기 김포 · 639세대 · 84㎡ 7.1억~',url:'/property/pungmu-sujain.html'},
       {name:'힐스테이트 안양펠루스',meta:'경기 안양 · 198세대 · 후분양 즉시입주',url:'/property/hillstate-anyang.html'},
       {name:'검단호수공원역 파라곤',meta:'인천 검단신도시 · 569세대 · 84㎡ 5.9억~',url:'/property/geomdan-paragon.html'},
       {name:'의정부역 센트럴 아이파크',meta:'경기 의정부 · 556세대 · 47층 GTX-C',url:'/property/uijeongbu-ipark.html'},

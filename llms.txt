@@ -5,7 +5,7 @@
 
 - 사이트: https://l.nolcool.com/
 - 사이트맵: https://l.nolcool.com/sitemap.xml
-- 최종 갱신: 2026-09-01
+- 최종 갱신: 2026-09-05
 - 광고·정정 문의: 카카오톡 besta12
 
 ## 전체 페이지 (145쪽)
@@ -19,7 +19,7 @@
 - [나이트 어디로 갈까 — 지역별 40곳 안내](https://l.nolcool.com/night/)
 - [안산히트나이트 방문 준비와 좌석 안내](https://l.nolcool.com/night/ansan-hit-night/)
 - [부천고래나이트 이용 전 궁금한 것 정리](https://l.nolcool.com/night/bucheon-gorae-night/)
-- [서울 은평구 불광동호박나이트 기본 안내](https://l.nolcool.com/night/bulgwang-hobak-night-1/)
+- [불광동호박나이트 기본 안내 서울 은평구](https://l.nolcool.com/night/bulgwang-hobak-night-1/)
 - [불광동호박나이트 인원별 자리 안내](https://l.nolcool.com/night/bulgwang-hobak-night-2/)
 - [불광동호박나이트 예약 요령과 자리 안내](https://l.nolcool.com/night/bulgwang-hobak-night/)
 - [부산아시아드나이트 문의 방법과 준비물](https://l.nolcool.com/night/busan-asiad-night-1/)
@@ -38,7 +38,7 @@
 - [대전원나이트 이용 전 궁금한 것 정리](https://l.nolcool.com/night/daejeon-one-night/)
 - [대전세븐나이트 방문 순서 정리](https://l.nolcool.com/night/daejeon-seven-night-1/)
 - [대전세븐나이트 자리 종류와 고르는 요령](https://l.nolcool.com/night/daejeon-seven-night-2/)
-- [대전 중구 대전세븐나이트 예약 안내](https://l.nolcool.com/night/daejeon-seven-night/)
+- [대전세븐나이트 예약 안내 대전 중구](https://l.nolcool.com/night/daejeon-seven-night/)
 - [답십리미라클나이트 방문 전 확인 목록](https://l.nolcool.com/night/dapsimni-miracle-night-1/)
 - [답십리미라클나이트 이용 안내 열다섯 가지](https://l.nolcool.com/night/dapsimni-miracle-night-2/)
 - [답십리미라클나이트 처음이라면 이것부터](https://l.nolcool.com/night/dapsimni-miracle-night/)
@@ -58,6 +58,7 @@
 - [파주야당스카이돔나이트 이용 전 궁금한 것 정리](https://l.nolcool.com/night/paju-skydome-night/)
 - [평택호박나이트 이용 전 궁금한 것 정리](https://l.nolcool.com/night/pyeongtaek-hobak-night/)
 - [상봉동한국관나이트 방문 준비와 좌석 안내](https://l.nolcool.com/night/sangbong-hangukgwan-night/)
+- [성남샴푸나이트 방문 전 확인 목록](https://l.nolcool.com/night/seongnam-shampoo-night-1/)
 - [성남샴푸나이트 이용 전 궁금한 것 정리](https://l.nolcool.com/night/seongnam-shampoo-night/)
 - [서산호박나이트 이용 전 궁금한 것 정리](https://l.nolcool.com/night/seosan-hobak-night/)
 - [신림그랑프리나이트 예약부터 입장까지 순서](https://l.nolcool.com/night/sillim-grandprix-night-2/)
@@ -69,11 +70,10 @@
 - [의정부한국관나이트 이용 전 궁금한 것 정리](https://l.nolcool.com/night/uijeongbu-hangukgwan-night/)
 - [울산챔피언나이트 가기 전 준비와 문의처](https://l.nolcool.com/night/ulsan-champion-night-1/)
 - [울산챔피언나이트 좌석·인원·시간 안내](https://l.nolcool.com/night/ulsan-champion-night-2/)
-- [울산 남구 울산챔피언나이트 기본 안내](https://l.nolcool.com/night/ulsan-champion-night/)
+- [울산챔피언나이트 기본 안내 울산 남구](https://l.nolcool.com/night/ulsan-champion-night/)
 - [울산뉴월드나이트 이용 전 궁금한 것 정리](https://l.nolcool.com/night/ulsan-newworld-night/)
 - [영등포터미널나이트 이용 전 궁금한 것 정리](https://l.nolcool.com/night/yeongdeungpo-terminal-night/)
 - [오피스텔분양 — 2026년 청약 접수 중인 실제 현장](https://l.nolcool.com/officetel/)
-- [운영 정책 안내 — l.nolcool.com](https://l.nolcool.com/policy/)
 - [아크로드서초 — 서초동 역대 최고 1,099대1 분양가·시세 비교전망](https://l.nolcool.com/property/acro-de-seocho/)
 - [아크로리버스카이 — 동작구 대방동 강남 인접 아크로 프리미엄](https://l.nolcool.com/property/acro-river-sky/)
 - [아산탕정자이 메트로시티 — 아산시아파트분양 입지·분양가 분석](https://l.nolcool.com/property/asan-tangjeong-xi-metrocity/)

@@ -3,10 +3,16 @@
   Cache-Control: public, max-age=0, must-revalidate
 /*.html
   Cache-Control: public, max-age=0, must-revalidate
+# ★ 2026-09-13 — 판 번호(해시)가 없는 묶음에 immutable 을 걸면 안 된다.
+#   이 사이트의 스크립트는 /main.js 하나이고 이름에 판 번호가 없다. 그런데 1년 immutable 이 걸려 있어서,
+#   2026-09-13 에 고친 계산기 null 크래시가 **손님에게 닿지 않았다**(실측: /main.js 는 옛 파일, /main.js?v= 는 고친 파일,
+#   property 5쪽이 브라우저에서 여전히 터졌다). immutable 은 파일 이름에 판 번호가 있을 때만 쓴다.
+#   Cloudflare 는 _headers 의 같은 헤더를 쉼표로 이어 붙이므로(공식 문서 확인 2026-09-13), 구체적 규칙을
+#   덧붙이는 대신 이 와일드카드 자체를 고친다.
 /*.css
-  Cache-Control: public, max-age=31536000, immutable
+  Cache-Control: public, max-age=3600, must-revalidate
 /*.js
-  Cache-Control: public, max-age=31536000, immutable
+  Cache-Control: public, max-age=3600, must-revalidate
 /*.png
   Cache-Control: public, max-age=604800
 /*.svg

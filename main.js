@@ -115,7 +115,13 @@ document.addEventListener('DOMContentLoaded', function() {
     var resultEl = document.getElementById('sim-amount');
     var totalEl = document.getElementById('sim-total');
 
+    /* 2026-09-13 — property 쪽에는 같은 id(sim-form)를 쓰지만 name= 없는 제 계산기가 들어 있다.
+       그래서 simForm 은 있는데 [name="price"] 는 없고, 여기서 null.value 로 터졌다.
+       터지면 뒤따르는 초기화(FAQ 접기 등)가 전부 멈춘다 — 사람만 동작이 깨진 쪽을 본다.
+       실측 5쪽: /property/beomeo-parkdream/ · geomdan-paragon · hillstate-anyang · pungmu-sujain · uijeongbu-ipark */
+    var 칸다있음 = !!(priceInput && downInput && rateInput && yearInput);
     function calcMonthly() {
+      if (!칸다있음) return;
       var price = parseFloat(priceInput.value) * 10000 || 0;
       var downPct = parseFloat(downInput.value) || 20;
       var rate = parseFloat(rateInput.value) || 3.5;

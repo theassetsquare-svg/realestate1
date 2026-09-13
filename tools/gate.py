@@ -58,7 +58,7 @@ def check_html(path, h, is_detail, status=None):
     for mm in re.finditer(r'href="(/[a-z][a-z0-9\-/]*\.html)"', h):
         v.append(("G-LINK-HTML", mm.group(1))); break
     # numeric 시세차익
-    if re.search(r'시세\s*차익[^<.。]{0,12}[0-9][0-9,]*\s*억|[0-9][0-9,]*\s*억[^<.。]{0,8}시세\s*차익', h):
+    if re.search(r'시세\s*차익[^<.。]{0,12}[0-9][0-9]*\s*억|[0-9][0-9]*\s*억[^<.。]{0,8}시세\s*차익', h):
         v.append(("G-SISE", "numeric 시세차익"))
     # hype
     for w in HYPE_WORDS:

@@ -199,10 +199,8 @@ def clean_jsonld(slug, rec):
             "itemListElement": [
                 {"@type": "ListItem", "position": 1, "name": "홈", "item": SITE + "/"},
                 {"@type": "ListItem", "position": 2, "name": info["label"], "item": SITE + info["page"]},
-                {"@type": "ListItem", "position": 3, "name": name, "item": canonical(slug)},
-            ],
-        },
-    ]
+                {"@type": "ListItem", "position": 3, "name": name, "item": canonical(slug)}],
+        }]
     return json.dumps({"@context": "https://schema.org", "@graph": graph}, ensure_ascii=False)
 
 
@@ -284,8 +282,7 @@ def generate_template(slug, rec, idx, today_iso, records=None):
         (f"{name} 분양 일정은?", f"{sched} 기준입니다(데이터 기준일 {today_iso}). 최신 일정은 청약홈 또는 모집공고문을 확인하세요."),
         (f"{name} 분양가는?", f"{price}입니다. 평형/호실별로 차이가 있으며 모집공고문 발표가가 확정가입니다."),
         (f"{name} 시공·시행사는?", f"{dev or '모집공고 기준 사업주체'}입니다."),
-        (f"{name} 현재 분양 상태는?", f"'{status}'입니다(데이터 기준일 {today_iso}, 청약홈 기준)."),
-    ]
+        (f"{name} 현재 분양 상태는?", f"'{status}'입니다(데이터 기준일 {today_iso}, 청약홈 기준).")]
     faq_html = "".join(f'<div class="faq-item"><div class="faq-q">{q}<span class="arrow">▼</span></div>'
                        f'<div class="faq-a"><div class="faq-a-inner">{a}</div></div></div>' for q, a in faqs)
 
@@ -456,8 +453,7 @@ _STALE = [
     ('<div class="stat-num">실시간</div><div class="stat-label">청약홈 연동</div>',
      '<div class="stat-num">청약홈</div><div class="stat-label">공공 분양정보 기반</div>'),
     ("실시간 업데이트됩니다",                     "정기적으로 업데이트됩니다"),
-    ("실시간으로 받아보세요",                     "더에셋스퀘어 본 사이트에서 받아보세요"),
-]
+    ("실시간으로 받아보세요",                     "더에셋스퀘어 본 사이트에서 받아보세요")]
 
 
 def _sync_badges(h: str, records: dict) -> str:
